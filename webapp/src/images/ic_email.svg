@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_email" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <style>
+            .cls-2{fill:#fff;stroke:#333;stroke-width:2px}.cls-9{fill:none}.cls-6{fill:#04a9a9}.cls-8{stroke:none}
+        </style>
+    </defs>
+    <g id="ic" transform="translate(-763 -364)">
+        <g id="사각형_291" class="cls-2" transform="translate(764 377)">
+            <rect width="88" height="64" class="cls-8" rx="4"/>
+            <rect width="86" height="62" x="1" y="1" class="cls-9" rx="3"/>
+        </g>
+        <g id="사각형_292" fill="#fff" stroke="#333">
+            <path d="M0 0H42V2H0z" class="cls-8" transform="translate(787 449)"/>
+            <path d="M0.5 0.5H41.5V1.5H0.5z" class="cls-9" transform="translate(787 449)"/>
+        </g>
+        <g id="사각형_293" class="cls-2">
+            <path d="M0 0H22V12H0z" class="cls-8" transform="translate(797 439)"/>
+            <path d="M1 1H21V11H1z" class="cls-9" transform="translate(797 439)"/>
+        </g>
+        <g id="email" stroke="#333" stroke-width="2px">
+            <g id="사각형_307" fill="#e9e9e9" transform="translate(810 386)">
+                <rect width="52" height="38" class="cls-8" rx="2"/>
+                <rect width="50" height="36" x="1" y="1" class="cls-9" rx="1"/>
+            </g>
+            <path id="패스_56" fill="none" d="M811.214 387.726l24.886 19.188 24.6-19.188" transform="translate(0 -.357)"/>
+        </g>
+        <g id="_3" transform="translate(-151 -3)">
+            <rect id="사각형_308" width="22" height="2" class="cls-6" rx="1" transform="translate(935 401)"/>
+            <rect id="사각형_310" width="22" height="2" class="cls-6" rx="1" transform="translate(935 413)"/>
+            <rect id="사각형_309" width="26" height="2" class="cls-6" rx="1" transform="translate(927 407)"/>
+        </g>
+        <path id="사각형_294" fill="#333" d="M0 0H86V1H0z" transform="translate(765 430)"/>
+    </g>
+</svg>

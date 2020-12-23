@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/header.html')
+
+		<div id="container">
+			@@include('./include/join_step.html',{
+				'step' : 2
+			})
+
+			<!-- Contents -->
+			<div id="contents" class="container">
+				<div class="title-field type-2">
+					<p>회원 본인 여부 및 가입 여부를 확인하기 위해<br class="is-hidden-tablet"> 본인인증이 필요합니다. 회원님의 소중한<br class="is-hidden-tablet"> 개인정보는 항상 암호화 되어 처리됩니다.</p>
+					<p>본인 인증시 제공되는 개인 정보는 해당 기관에서 직접<br class="is-hidden-tablet"> 수집하며, 인증 이외 용도로 이용 또는 저장하지 않습니다.</p> <!-- 2020/11/24 수정 -->
+				</div>
+				
+				<div class="contents-grid is-mobile-inner">
+					<div class="level certification-box">
+						<div class="level-left">
+							<button class="box is-gray is-shadowless phone">
+								<strong>휴대전화 인증하기</strong> <!-- 2020/11/24 수정 -->
+							</button>
+						</div>
+						<div class="level-right">
+							<button class="box is-gray is-shadowless ipin">
+								<strong>아이핀 인증하기</strong> <!-- 2020/11/24 수정 -->
+							</button>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+			<!-- // Contents -->
+			
+		</div>
+		@@include('./include/bi_list.html',{
+			'mobile' : false
+		})
+	</div>
+	<script>
+		ui.init();
+	</script>
+</body>
+</html>

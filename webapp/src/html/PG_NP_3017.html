@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr" style="overflow:hidden">
+@@include('./include/head.html')
+<body style="overflow:hidden">
+<aside class="modal is-active">
+	<div class="modal-background" aria-label="background"></div>
+	<div class="modal-card">
+		<div class="modal-card-head">
+			<h3 class="modal-card-title">본인인증</h3>
+		</div>
+		<div class="modal-card-body identity-verification"> <!-- 2020/11/24 수정 -->
+			<div class="modal-inner-box">
+				<h4 class="title is-4">SMS로 확인하기</h4>
+				<p>회원님의 개인정보는 항상 암호화되어 처리하고,<br>본인인증으로만 사용합니다.</p>
+				<p>(SMS 비용은 과금되지 않습니다.)</p>
+				<div class="field-grid">
+					<div class="field">
+						<div class="columns">
+							<div class="column">
+								<label class="label">자택 번호<span>(선택)</span></label>
+								<div class="columns phone-box">
+									<div class="column is-4">
+										<div class="control">
+											<div class="select is-medium is-fullwidth">
+												<select>
+													<option value="self" selected="selected">선택</option>
+													<option>010</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="column is-8 columns is-mobile">
+										<div class="column">
+											<div class="control">
+												<input type="tel" class="input is-medium">
+											</div>
+										</div>
+										<div class="column">
+											<div class="control">
+												<input type="tel" class="input is-medium">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list hyphen">
+							<ul>
+								<li>회원님이 사용하고 계신 휴대전화 번호를 입력해주시기 바랍니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="box is-gray is-shadowless bullet-dotted-box"> <!-- 2020/11/24 수정 -->
+					<div class="list dotted">
+						<ul>
+							<li>인증번호 받기를 클릭하시면 입력하신 번호로 인증번호가 발송됩니다.</li>
+							<li>통신사의 사정으로 문자를 받지 못하건, 지연될 수 있습니다.</li>
+							<li>동일 휴대전화번호로 최대 3회까지 회원가입인증이 가능합니다.</li>
+							<li class="point-color-1">본 인증은 포인트 사용, 포인트 선물하기, 포인트카드 등록이 제한됩니다.</li>
+						</ul>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+		<div class="modal-card-foot">
+			<button class="button is-medium is-gray">취소</button>
+			<button class="button is-medium is-green">인증번호 받기</button>
+		</div>
+		<button class="modal-close" aria-label="close"></button>
+	</div>
+</aside>
+
+<script>
+	ui.init();
+</script>
+</body>
+</html>

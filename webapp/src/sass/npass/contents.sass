@@ -1,0 +1,1398 @@
+/* Content Common */
+
+/* 텍스트 리스트 */
+$text-list-color: $color-6
+
+%list-style
+	+font-set(13px, -.26px, 21px)
+	color: $text-list-color
+	text-align: left
+
+.titleList
+	dl
+		dt
+			@extend %list-style
+			margin:
+				bottom: 0
+		dd
+			@extend %list-style
+			&.list
+				margin: 
+					top: 0px
+.list
+	li
+		@extend %list-style
+	&.hyphen
+		li
+			text-indent: -5px
+			padding:
+				left: 5px
+			&::before
+				content: '- '
+	&.dotted
+		li
+			padding:
+				left: 7px
+			position: relative
+			+ li
+				margin:
+					top: 5px
+			&::before
+				content: ''
+				width: 3px
+				height: 3px
+				background:
+					color: $text-list-color
+				position: absolute
+				top: 8px
+				left: 0
+			
+
+	.is-text
+		@extend %list-style
+		display: inline
+
+/* Point Color */
+$point-color-1           : $color-2
+$point-color-2           : $color-3
+$point-color-3           : $color-1
+
+.point-color-1
+	color: $point-color-1 !important
+.point-color-2
+	color: $point-color-2 !important
+.point-color-3
+	color: $point-color-3 !important
+
+/* Align */
+$aligns: left center right
+@each $align in $aligns
+	.is-align-#{$align}
+		text-align: #{$align}
+
+/* Style */
+.underline
+	text-decoration: underline !important
+
+/* Border */
+$border-position: top bottom left right
+$border-color   : $color-11
+
+@each $position in $border-position
+	.is-border-#{$position}
+		border-#{$position}: 1px solid $border-color
+
+/* 타이틀 */
+$title-point-color: $color-2
+.title-field
+	border:
+		bottom: 1px solid $border-color
+	padding:
+		bottom: 30px
+		left: $gap
+		right: $gap
+	+desktop
+		padding:
+			left: 0px
+			right: 0px
+	.title
+		&:not(:last-child)
+			margin: 
+				bottom: 15px
+	p
+		+font-set(15px, -.3px, 23px)
+		+ p
+			margin: 
+				top: 4px
+			+font-set(13px, -.26px, 21px)
+			color: $title-point-color
+	&.type-2
+		text-align: center
+
+.title
+	&.is-2
+		line-height: 38px
+		letter-spacing: -1.2px
+
+/* Search */
+.is-search
+	.input
+		padding:
+			right: 60px
+	.btn-search
+		width: 60px
+		height: 50px
+		position: absolute
+		top: 0
+		right: 0
+		background:
+			color: transparent
+			image: url(#{$image-path}btn_search.svg)
+			repeat: no-repeat
+			position: center
+		border: none
+		font: 
+			size: 0
+		cursor: pointer
+		&:focus
+			outline: none
+			border: none
+
+/* No Data */
+$no-data-font-color: $color-6
+.no-data
+	justify-content: center
+	display: flex
+	align-items: center
+	flex-grow: 1
+	p
+		+font-set(18px, -.36px, 26px)
+		color: $no-data-font-color
+		padding:
+			top: 75px
+		background:
+			image: url(#{$image-path}ic_fail.svg)
+			repeat: no-repeat
+			position: center top
+
+/* validation */
+$field-message-color: $color-6
+$error-color        : $color-2
+$success-color      : $color-3
+
+=valid-icon($color)
+	+ .msg
+		position: relative
+		padding: 
+			left: 24px
+		color: $color
+		&::before
+			content: '!'
+			border: 1px solid $color
+			border:
+				radius: 100%
+			width: 16px
+			height: 16px
+			position: absolute
+			top: 3px
+			left: 0
+			text-align: center
+			line-height: 14px
+
+.columns
+	&.is-error
+		.input,
+		.select select
+			border:
+				color: $error-color
+		+valid-icon($error-color)
+	&.is-success
+		+valid-icon($success-color)
+
+.msg
+	margin:
+		top: calc(10px - #{$column-gap})
+	font: 
+		size: 13px
+	letter-spacing: -.26px
+	line-height: 21px
+	color: $field-message-color
+		
+
+/* Login */
+$search-link-color         : $color-6
+$search-link-hypen         : $color-9
+$welcome-box-line-color    : $color-9
+$welcome-box-title-color   : $color-5
+$welcome-box-sub-copy-color: $color-6
+
+.login
+	// padding:
+	// 	top: 100px
+	// +mobile
+	// 	padding:
+	// 		top: 20px
+	h1
+		// padding:
+		// 	bottom: 30px
+		// border:
+		// 	bottom: 1px solid $border-color
+		span
+			display: block
+			text-align: center
+			img
+				width: 120px
+				height: 34px
+		strong
+			+font-set(30px, -1.8px, 45px)
+			margin:
+				top: 15px
+			display: block
+			text-align: center
+			font:
+				weight: 300
+		+ .form-grid
+			margin: 
+				top: calc(30px - #{$column-gap})
+			+mobile
+				margin: 
+					top: calc(40px - #{$column-gap})
+		+ .complete-grid
+			padding:
+				top: 100PX
+			border:
+				top: 1px solid $border-color
+			margin:
+				top: 30px
+		&.is-hidden-mobile
+			+ .complete-grid
+				+mobile
+					margin:
+						top: 0px
+					padding:
+						top: 40px
+					border:
+						top: none
+	.form-grid
+		+mobile
+			width: auto
+		.field
+			&:not(:last-child)
+				margin-bottom: calc(10px - #{$column-gap})
+		.filed-grid
+			+ .buttons
+				margin:
+					top: 20px
+
+		// .buttons
+		.util
+			margin:
+				top: 15px
+				bottom: 0
+			.checkbox
+				+font-set(16px, 0px, 24px)
+			.util-link
+				justify-content: flex-end
+				a
+					display: flex
+					+font-set(14px, -.28px, 22px)
+					padding:
+						left: 8px
+						right: 7px
+					color: $search-link-color
+					position: relative
+					&::before							
+						content: ''
+						width: 1px
+						height: 12px
+						background:
+							color: $search-link-hypen
+						position: absolute
+						top: 50%
+						left: 0
+						transform: translateY(-50%)
+					&:first-child
+						&::before
+							display: none
+					&:last-child
+						padding:
+							right: 0
+			@media screen and ( max-width: 320px )
+				display: block
+				.level-left,
+				.level-right
+					display: block
+					width: 100%
+				.util-link
+					margin:
+						top: 20px
+					a
+						display: inline-block
+						vertical-align: top
+						&:first-child
+							padding:
+								left: 0
+	.join
+		margin:
+			top: 50px
+			bottom: 0
+		+ .join
+			margin:
+				top: 25px
+		.is-text
+			margin:
+				left: 0
+			
+
+/* 통합회원 가입 Gate */
+$welcome-box-line-color    : $color-9
+$welcome-box-title-color   : $color-5
+$welcome-box-sub-copy-color: $color-6
+
+.complete-grid
+	text-align: center
+	padding:
+		top: 100px
+	+desktop
+		&.add-border-top
+			border:
+				top: 1px solid $welcome-box-line-color
+	+mobile
+		border: none
+		margin:
+			top: 0
+
+	.img-box
+		text-align: center
+		+ .box
+			margin:
+				top: 20px
+	.complete-meseege-copy
+		+font-set(30px, -1.2px, 40px)
+		color: $welcome-box-title-color
+		padding:
+			top: 120px
+		position: relative
+		margin:
+			top: 0
+		background:
+			image: url(#{$image-path}ic_joincheck.svg)
+			repeat: no-repeat
+			position: center top
+		strong
+			font:
+				weight: $weight-normal
+	.complete-meseege-sub-copy
+		+font-set(16px, -.32px, 24px)
+		color: $welcome-box-sub-copy-color
+		margin:
+			top: 10px
+		+ p
+			+font-set(13px, -.26px, 21px)
+			color: $welcome-box-sub-copy-color
+			margin:
+				top: 15px
+	.buttons
+		margin:
+			top: 60px
+		.button
+			+mobile
+				width: 165px
+		+ .title
+			margin:
+				top: 60px
+			text-align: left
+
+/* 약관동의 */
+$agree-checkbox-base-color         : $color-7
+$agree-checkbox-current-color      : $color-3
+$agree-checkbox-label-color        : $color-4
+$agree-checkbox-discription-color  : $color-4
+$agree-item-border-color           : $color-11
+$agree-list-border-color           : $color-6
+
+.agree-list
+	position: relative
+	padding:
+		top: 42px
+	> ul
+		padding: 
+			top: 11px
+		border: 
+			top: 1px solid $agree-list-border-color
+	.all-check
+		position: absolute
+		top: 0
+		left: 0
+		strong
+			font:
+				weight: $weight-medium
+			+font-set(20px, 0, 24px)				
+
+.agree-item
+	border: 
+		bottom: 1px solid $agree-item-border-color
+	.agree-title-box
+		position: relative
+		padding: 
+			top: 16px
+			bottom: 15px
+			right: 50px
+		.button
+			position: absolute
+			top: 50%
+			right: 0px
+			transform: translateY(-50%)
+			padding: 9px
+			+mobile
+				height: 100%
+				width: 40px
+				span
+					+arrow($color-6)
+					font: 
+						size: 0
+					width: 12px
+					height: 12px
+					border:
+						width: 2px
+					margin: 
+						top: 0
+					transform: rotate(225deg) translateY(100%)
+	.agree-frame
+		border:
+			radius: 0
+		display: none
+		+mobile
+			padding: 0
+		iframe
+			width: 100%
+			border: none
+		&.is-active
+			display: flex
+			.modal-card-body
+				overflow: hidden
+			iframe
+				+mobile
+					-webkit-overflow-scrolling: touch
+					height: calc(var(--vh, 1vh) * 100 - 120px)
+					// height: calc(100vh - 60px - 60px) // 전체 - 해더 body 패딩
+			+desktop
+				height: 200px
+				.modal-inner-box
+					padding: 0
+				.modal-close
+					display: none
+				.modal-background
+					display: none
+				.modal-card
+					width: 100%
+				.modal-card-head
+					display: none
+				.modal-card-body
+					padding: 0
+					background:
+						color: transparent
+			+tablet
+				height: 200px
+				.modal-inner-box
+					padding: 0
+				.modal-close
+					display: none
+				.modal-background
+					display: none
+				.modal-card
+					width: 100%
+				.modal-card-head
+					display: none
+				.modal-card-body
+					padding: 0
+					background:
+						color: transparent
+
+.checkbox
+	&.agree-checkbox
+		> input
+		> i
+			border: none
+			top: 0
+			left: 0
+			transform: translateY(0px)
+			&::before
+				width: 12px
+				height: 8px
+				border: 2px solid $agree-checkbox-base-color
+				border:
+					right: 0
+					top: 0
+				top: 6px
+				left: 6px
+				transform: rotate(-45deg)
+				transition: all .5s
+		> input
+			&:checked
+				+ i
+					background:
+						color: transparent
+					border: none
+					&:before
+						border: 
+							color: $agree-checkbox-current-color
+		.agree-text-box
+			display: block
+			.label
+				display: block
+				+font-set(15px, -.3px, 23px)
+				font: 
+					weight: $weight-normal
+				color: $agree-checkbox-label-color
+				
+			.discription
+				display: block
+				margin: 
+					top: 7px
+				+font-set(15px, -.3px, 23px)
+				color: $agree-checkbox-label-color
+				text-indent: -5px
+				padding-left: 5px
+				font:
+					weight: $weight-medium
+				&.type-2
+					+font-set(13px, -.26px, 21px)
+					font:
+						weight: $weight-normal
+				&::before
+					content: '- '
+				strong
+					font: 
+						weight: $weight-normal
+					display: inline
+		.checkbox-list
+			margin:
+				top: 20px
+		.list
+			margin:
+				top: 16px
+
+/* 시스템 팝업 */
+$modal-system-meseege-color    : $color-1
+$modal-system-meseege-sub-color: $color-6
+
+.system
+	.error-box
+		display: flex
+		justify-content: center
+		flex-grow: 1
+		p
+			+font-set(18px, -.36px, 26px)
+			font: 
+				weight: $weight-medium
+			color: $modal-system-meseege-color
+			padding:
+				top: 75px
+			background:
+				image: url(#{$image-path}ic_fail.svg)
+				repeat: no-repeat
+				position: center top
+	.msg-box
+		text-align: center
+		margin: 
+			top: 10px
+		div,
+		p
+			+font-set(13px, -.26px, 21px)
+			color: $modal-system-meseege-sub-color
+	.box
+		margin: 
+			top: 20px
+		p
+			+font-set(13px, -.26px, 21px)
+			color: $modal-system-meseege-sub-color
+
+/* 본인인증 */
+$box-hover-border-color: $color-3
+
+.certification-box
+	padding: 0 90px
+	+mobile
+		padding: 0px
+	> div
+		width: 50%
+		padding:
+			right: 10px
+		+mobile
+			width: 100%
+			padding: 0
+		&:last-child
+			padding:
+				right: 0
+				left: 10px
+			+mobile
+				padding: 0
+	.box
+		width: 100%
+		padding: 60px 0
+		border: none
+		cursor: pointer
+		+mobile
+			padding: 30px 0
+		&:active,
+		&:focus
+			outline: none
+		border:
+			width: 1px
+			style: solid
+			color: $color-transparent
+		transition: border .2s
+		+mobile
+			&:active
+				border: 
+					color: $box-hover-border-color
+		+desktop
+			&:hover
+				border: 
+					color: $box-hover-border-color
+		strong
+			text-align: center
+			display: block
+			padding:
+				top: (80px + 15px)
+			+font-set(18px, -.72px, 26px)
+			background:
+				repeat: no-repeat
+				position: center top
+		&.phone
+			strong
+				background:
+					image: url(#{$image-path}ic_phone.svg)
+		&.ipin
+			strong
+				background:
+					image: url(#{$image-path}ic_ipin@3x.png)
+					size: 80px 80px
+	.buttons
+		margin:
+			top: 20px
+	+ .box
+		margin:
+			top: 40px
+
+/* 정보입력 */
+.add-information
+	padding:
+		bottom: 0px
+	.field-box
+		padding:
+			bottom: 25px
+
+.add-util-btn
+	+tablet
+		.is-one-quarter
+			min-width: calc(140px + #{$column-gap * 2})
+			// .columns.is-mobile > &.is-one-quarter
+	&.is-mobile
+		> .column.is-one-quarter
+			width: calc(140px + #{$column-gap * 2})
+
+.address-tabs
+	width: calc(50% - #{$column-gap})
+	+mobile
+		width: 100%
+	margin:
+		bottom: 15px
+
+.address-box
+	.level
+		margin:
+			top: calc(15px - #{$column-gap})
+
+.anniversary-box
+	.title
+		&.is-4
+			margin:
+				bottom: 10px
+			letter-spacing: -.36px
+			line-height: 26px
+
+.join-box
+	margin:
+		bottom: 0 !important
+	p
+		+font-set(15px, -.3px, 23px)
+		+ p
+			+font-set(13px, -.26px, 21px)
+			color: $color-6
+			margin:
+				top: 5px
+	
+.add-information
+	padding:
+		top: 0
+	margin:
+		top: 50px
+
+.anniversary-box
+	margin:
+		top: 25px
+
+$title-box-border-color: $color-6
+.title-box
+	border:
+		bottom: 1px solid $title-box-border-color
+		top: 1px solid $border-color
+	a
+		display: block
+		padding: 21px 10px
+		strong
+			display: block
+			position: relative
+			&::before
+				@extend %arrow
+				width: 12px
+				height: 12px
+				right: 0
+				transform: translateY(-50%) rotate(135deg)
+				transition: transform .2s
+				margin:
+					top: 0
+				border:
+					color: $input-arrow
+					width: 2px
+					radius: 0
+		&.is-active
+			strong
+				&::before
+					transform: translateY(-50%) rotate(-45deg)
+
+/* 주소 찾기 */
+$modal-address-head-background-color: $color-10
+$modal-address-title-color          : $color-4
+$modal-address-list-border-color    : $color-9
+$modal-address-list-sub-text-color  : $color-6
+
+.address-grid
+	margin:
+		top: 40px
+	.address-head
+		height: 50px
+		padding: 0 20px
+		background: 
+			color: $modal-address-head-background-color
+		margin: 
+			bottom: 0
+		.address-title
+			+font-set(15px, -.3px, 21px)
+			font:
+				weight: 500
+			color: $modal-address-title-color
+			letter-spacing: -.3px
+		.address-count
+			+font-set(13px, -.26px, 21px)
+			font:
+				weight: 500
+	.address-body
+		display: flex
+		height: calc(600px - 258px)
+		+mobile
+			height: calc(var(--vh, 1vh) * 100 - 261px)
+		overflow: auto
+		ul
+			width: 100%
+		li
+			border:
+				bottom: 1px solid $modal-address-list-border-color
+		.address-item
+			a
+				display: flex
+				justify-content: space-between
+				padding: 15px 0 16px
+				.zipcode,
+				.address
+					display: flex
+					align-items: center
+				.zipcode
+					flex-grow: 1
+					justify-content: center
+					+font-set(14px, 0px, 22px)
+					padding: 0 20px
+				.address-box
+					justify-content: start
+					flex-grow: 1.5
+					padding:
+						right: 20px
+					.address
+						+font-set(14px, -.28px, 22px)
+						margin:
+							top: 5px
+						&:first-child
+							margin:
+								top: 0
+						&:last-child
+							color: $modal-address-list-sub-text-color
+
+/* 아이디 찾기 */
+$email-list-color       : $color-6
+$email-list-border-color: $color-9
+
+.email-list
+	padding: 10px 20px
+	border:
+		radius: 0
+	border: 1px solid $border-color
+	ul
+		max-height: (110px - 20px)
+		overflow:
+			x: hidden
+			y: auto
+	
+	li
+		+font-set(13px, 0px, 23px)
+		color: $email-list-color
+		padding: 9px 0 8px
+		border-bottom: 1px solid $email-list-border-color
+
+/* phone box */
+.phone-box
+	> .columns
+		margin: 0
+		padding: 0
+
+/* 카드번호와 CVC코드란? */
+$card-list-title    : $color-5
+$card-list-sub-title: $color-1
+$card-list-copy     : $color-6
+
+.card-list
+	overflow: auto
+	h4
+		font:
+			weight: $weight-medium
+		+font-set(20px, -.8px, 38px)
+		color: $card-list-title
+		+ .card-list-box
+			margin:
+				top: 20px
+	.card-list-box
+		&:not(:last-child)
+			padding:
+				bottom: 42px
+			border:
+				bottom: 1px solid $border-color
+			+ h4
+				margin:
+					top: 38px
+	li
+		list-style: none
+		+ li
+			margin:
+				top: 30px
+	dl
+		dt
+			font:
+				weight: $weight-medium
+			+font-set(16px, -.32px, 23px)
+			color: $card-list-sub-title
+		dd
+			+font-set(15px, -.3px, 23px)
+			color: $card-list-copy
+			margin:
+				top: 4px
+			+desktop
+				width: 300px
+			&.img
+				margin:
+					top: 20px
+				img
+					width: 220px
+					+mobile
+						width: auto
+						max-width: 59%
+
+/* 비밀번호 찾기 - PG_NP_2009 */
+$temporary-password-title : $color-3
+.temporary-password-box
+	.level
+		margin:
+			bottom: 0
+		> div
+			width: 50%
+			
+			padding:
+				right: 10px
+			&:last-child
+				padding:
+					left: 10px
+					right: 0px
+			+mobile
+				width: 100%
+				padding: 0
+				&:last-child
+					padding:
+						left: 0px
+		.box
+			padding: 40px 0
+			+mobile
+				padding: 30px 0
+			width: 100%
+			display: flex
+			justify-content: center
+			dl
+				dt,
+				dd
+					text-align: center
+				dt
+					color: $temporary-password-title
+					font:
+						weight: $weight-medium
+					+font-set(18px, -.72px, 26px)
+				dd
+					&:not(.btn)
+						+font-set(18px, 0px, 26px)
+						margin:
+							top: 10px
+					&.btn
+						margin:
+							top: 30px
+	.buttons
+		margin:
+			top: 15px
+	+ .box
+		margin:
+			top: 50px
+
+
+
+
+/* step */
+$step-box-background-color            : $color-15
+$step-box-icon-background-color       : $color-8
+$step-box-icon-active-check-color     : $color-8
+$step-box-icon-active-background-color: $color-3
+$step-box-icon-active-border-color    : $color-3
+$step-box-icon-active-color           : $color-1
+$step-box-icon-complete-color         : $color-3
+$step-box-complete-color              : $color-4
+$step-box-icon-color                  : $color-7
+
+$step-box-line-color                  : $color-11
+
+.step-box
+	background:
+		color: $step-box-background-color
+	display: flex
+	padding: 16px 0
+	align-items: center
+	justify-content: center
+	ol
+		display: flex
+		align-items: center
+		justify-content: space-around
+		position: relative
+		&::before
+			content: ''
+			width: calc(100% - 40px)
+			height: 1px
+			position: absolute
+			top: 13px
+			left: 50%
+			transform: translateX(-50%)
+			// border:
+			// 	top: 1px dotted $step-box-line-color
+			background:
+				color: $step-box-line-color
+		&::after
+			content: ''
+			width: calc(100% - 40px)
+			height: 1px
+			position: absolute
+			top: 13px
+			left: 50%
+			transform: translateX(-50%)
+		&[data-step="4"]
+			@for $i from 1 through 4
+				&.step-#{$i}
+					&::after
+						background: linear-gradient(to right, bulmaRgba($step-box-icon-active-border-color, 1) 0%, bulmaRgba($step-box-icon-active-border-color, 1) #{($i - 1) * 33.3%}, bulmaRgba($border-color, 1) #{($i - 1) * 33.3%}, bulmaRgba($border-color, 1) 100%)
+		&[data-step="3"]
+			@for $i from 1 through 3
+				&.step-#{$i}
+					&::after
+						background: linear-gradient(to right, bulmaRgba($step-box-icon-active-border-color, 1) 0%, bulmaRgba($step-box-icon-active-border-color, 1) #{($i - 1) * 50%}, bulmaRgba($border-color, 1) #{($i - 1) * 50%}, bulmaRgba($border-color, 1) 100%)
+	li
+		list-style: none
+		// display: flex
+		margin:
+			left: 40px
+		@media screen and ( max-width: 320px )
+			margin:
+				left: 20px
+			
+		position: relative
+		z-index: 1
+		i
+			display: block
+			margin: auto
+			width: 26px
+			height: 26px
+			border: 1px solid $border-color
+			border-radius: 100%
+			font:
+				style: normal
+			text-align: center
+			padding: 2px 0 4px
+			+font-set(14px, -.28px, 21px)
+			color: $step-box-icon-color
+			background:
+				color: $step-box-icon-background-color
+			span
+				font:
+					size: 0
+		strong
+			display: block
+			flex:
+				direction: column
+			color: $step-box-icon-color
+			+font-set(13px, -.26px, 23px)
+			margin:
+				top: 3px
+		&:first-child
+			margin:
+				left: 0px
+		&.is-active
+			i
+				font:
+					size: 0
+				background:
+					color: $step-box-icon-active-background-color
+				border:
+					color: $step-box-icon-active-border-color
+				position: relative
+				&::before
+					content: ''
+					border: 2px solid $step-box-icon-active-check-color
+					border-right: 0
+					border-top: 0
+					position: absolute
+					top: 6px
+					left: 6px
+					transform: rotate(-45deg)
+					width: 12px
+					height: 8px
+			strong
+				font:
+					weight: $weight-medium
+				color: $step-box-icon-active-color
+		&.is-complete
+			i
+				border:
+					color: $step-box-icon-active-border-color
+				color: $step-box-icon-complete-color
+				font:
+					weight: $weight-medium
+			strong
+				color: $step-box-complete-color
+
+/* 본인인증 팝업 */
+$identity-verification-point-color: $color-2
+.identity-verification
+	overflow: auto
+	h4
+		line-height: 24px
+		letter-spacing: -.36px
+	p
+		+font-set(15px, -.3px, 23px)
+		+ p
+			+font-set(13px, -.26px, 21px)
+			color: $identity-verification-point-color
+		+ .field-grid
+			margin:
+				top: 30px
+
+/* 회원정보 수정 */
+.my-info-modify-gate
+	display: flex
+	justify-content: space-between
+	+mobile
+		flex-direction: column
+		justify-content: normal
+	.box
+		width: 272px
+		margin:
+			bottom: 0
+		padding: 40px 28px
+		+mobile
+			width: 100%
+			+ .box
+				margin:
+					top: 15px
+				padding: 30px 28px
+		
+		p
+			+font-set(15px, -.3px, 23px)
+			text-align: center
+		.buttons
+			margin:
+				top: 30px
+			+mobile
+				margin:
+					top: 20px
+				.button
+					width: auto !important
+			
+	+ .buttons
+		margin:
+			top: 15px
+
+/* 회원 탈퇴 */
+$length-box-default-color: $color-6
+$length-box-now-color    : $color-3
+.textarea-box
+	margin:
+		top: 20px
+	display: none
+	&.is-active
+		display: block
+	.box
+		padding: 20px
+		border: 1px solid $border-color
+		border-radius: 0
+		margin:
+			bottom: 10px
+	textarea
+		border: none
+		resize: none
+		width: 100%
+		padding: 0px
+	.length-box
+		+font-set(13px, 0px, 24px)
+		color: $length-box-default-color
+		text-align: right
+		em
+			font-style: normal
+		.now
+			color: $length-box-now-color
+
+/* 회원정보 수정 */
+$modify-box-sub-copy-color: $color-6
+.modify-box
+	padding: 30px
+	+mobile
+		padding: 20px
+	&:not(:last-child)
+		margin:
+			bottom: 30px
+	> div
+		&:not(.buttons)
+			padding:
+				left: 100px
+			background:
+				image: url(#{$image-path}ic_idcard.svg)
+				repeat: no-repeat
+				position: left top
+			+mobile
+				padding:
+					left: 0
+				background: none
+			p
+				+font-set(18px, -.72px, 26px)
+				font:
+					weight: $weight-medium
+				+ p
+					+font-set(13px, -.26px, 21px)
+					font:
+						weight: $weight-normal
+					margin:
+						top: 5px
+					span
+						color: $modify-box-sub-copy-color
+			+ .buttons
+				margin:
+					top: 20px
+
+/* 휴먼 계정 */
+$table-top-border-color: $color-1
+$table-header-background-color: $color-10
+$table-body-point-color: $color-3
+$table-body-border-color: $color-11
+
+$mobile-table-header-title-background-color: $color-10
+$mobile-table-header-border-color: $color-6
+
+.table-list
+	border:
+		top: 1px solid $table-top-border-color
+	+mobile
+		border: none
+	.table-head
+		+mobile
+			display: none
+		.row
+			li
+				padding: 15px 0
+				font:
+					weight: $weight-medium
+				background:
+					color: $table-header-background-color
+	.table-body
+		.row
+			border: 
+				bottom: 1px solid $table-body-border-color
+			+mobile
+				border: 
+					bottom: none
+					top: 1px solid $mobile-table-header-border-color
+	.row
+		display: flex
+		+mobile
+			margin:
+				top: 25px
+		&:first-child
+			margin:
+				top: 0
+		+mobile
+			display: block
+		li
+			display: flex
+			width: 33.3%
+			+font-set(15px, -.3px, 23px)
+			align-items: center
+			justify-content: center
+			+mobile
+				display: block
+				width: 100%
+				flex-direction: column
+				
+			dl
+				display: flex
+				+mobile
+					border: 
+						bottom: 1px solid $border-color
+				dt
+					display: none
+					+mobile
+						display: flex
+						width: 38%
+						padding: 15px 20px
+						background:
+							color: $mobile-table-header-title-background-color
+						text-align: left
+
+				dd
+					// display: flex
+					padding: 15px 0
+					+mobile
+						width: 62%
+						display: flex
+						justify-content: flex-end
+						padding: 15px 20px
+						align-items: center
+						// flex:
+						// 	grow: 3
+					strong,
+					.button
+						color: $table-body-point-color
+					strong
+						font:
+							weight: $weight-normal
+					.button
+						padding:
+							right: 10px
+						position: relative
+						&::before
+							+arrow($table-body-point-color)
+							right: 6px
+							width: 8x
+							height: 8px
+							border:
+								width: 1px
+								radius: 0
+							margin: 
+								top: 0
+							
+							transform: rotate(225deg) translateY(75%)
+						&:hover
+							color: $table-body-point-color
+		
+// 에러 페이지
+.error
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 100vh
+	.complete-grid
+		width: 840px
+		padding:
+			top: 0
+
+// Loading
+$loading-box-background-color: rgba($color-14, 0.1)
+.loading-box
+	width: 100%
+	height: 100vh
+	position: fixed
+	top: 0
+	left : 0
+	background: 
+		color: $loading-box-background-color
+	display: flex
+	justify-content: center
+	align-items: center
+
+	%loading-animation
+		border-radius: 50%
+		width: 1.800em
+		height: 1.800em
+		-webkit-animation-fill-mode: both
+		animation-fill-mode: both
+		-webkit-animation: load7 1.8s infinite ease-in-out
+		animation: load7 1.8s infinite ease-in-out
+	.loading
+		@extend %loading-animation
+
+		color: #FF9E1E
+		font-size: 10px
+		position: relative
+		text-indent: -9999em
+		-webkit-transform: translateZ(0)
+		-ms-transform: translateZ(0)
+		transform: translateZ(0)
+		-webkit-animation-delay: -0.16s
+		animation-delay: -0.16s
+		text-align:center
+		&::before
+			@extend %loading-animation
+
+			content: ''
+			position: absolute
+			top: 0
+			left: -3.000em
+			-webkit-animation-delay: -0.32s
+			animation-delay: -0.32s
+		&::after
+			@extend %loading-animation
+
+			content: ''
+			position: absolute
+			top: 0
+			left: 3.000em
+
+@keyframes load7
+	0%,
+	80%,
+	100%
+		box-shadow: 0 3em 0 -2em
+	40%
+		box-shadow: 0 3em 0 0
+	
+				
+
+
+/* 사이 간격 */
+.columns + .list
+	margin: 
+		top: calc(10px - #{$column-gap})
+.msg + .list,
+.is-search + .list,
+.filed-grid + .list
+	margin: 
+		top: 10px
+.address-box + .list
+	margin: 
+		top: 15px
+.contents-grid + .msg-box,
+.modal-msg + .filed-grid
+	margin: 
+		top: 20px
+.title-box + .field-box
+	margin: 
+		top: 25px
+.field-grid + .box
+	margin:
+		top: 40px
+		bottom: 0
+.modal .field-grid + .box
+	margin:
+		top: 20px
+.buttons + .box
+	margin:
+		top: 40px
+

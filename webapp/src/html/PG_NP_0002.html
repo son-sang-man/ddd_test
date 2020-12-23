@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/header.html')
+
+		<div id="container">
+
+			<!-- Contents -->
+			<div id="contents" class="container">
+
+				<div class="complete-grid is-mobile-inner">
+                    <div class="img-box">
+                        <img src="/npass/img/ic_alljoin.svg" alt="">
+                    </div>
+                    <div class="box is-gray is-shadowless is-align-center complete">
+                        <p>GS&amp;POINT <span class="point-color-1">통합 회원가입</span>을<br class="is-hidden-tablet"> 하셔야 GS&amp;PASS의 서비스를<br class="is-hidden-tablet"> 이용하실 수 있습니다.</p> <!-- 2020/11/24 수정 -->
+                        <p>약관동의 및 본인인증을 하신 후, GS&amp;POINT<br class="is-hidden-tablet"> 사이트를 이용해 주시기 바랍니다.</p> <!-- 2020/11/24 수정 -->
+                    </div>
+					<div class="buttons is-centered">
+						<a href="#" class="button is-large is-green">다음</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- // Contents -->
+			
+		</div>
+		@@include('./include/bi_list.html',{
+			'mobile' : false
+		})
+	</div>
+	<script>
+		ui.init();
+	</script>
+</body>
+</html>

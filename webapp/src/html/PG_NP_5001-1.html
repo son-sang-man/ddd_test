@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/header.html')
+
+		<div id="container">
+
+			<!-- Contents -->
+			<div id="contents" class="container">
+				<div class="title-field">
+					<h2 class="title is-2">회원탈퇴</h2> <!-- 2020/12/26 수정 -->
+					<p>회원 탈퇴 사유를 선택하시기 바랍니다.</p>
+					<p>회원 탈퇴를 하시면 GS&amp;POINT 회원에 제공되는 혜택이<br class="is-hidden-tablet"> 더이상 제공되지 않으며, 회원 탈퇴 후 취소는 불가능합니다.</p> <!-- 2020/11/24 수정 -->
+				</div>
+				
+				<div class="contents-grid is-mobile-inner">
+					<div class="box is-gray is-shadowless form-list-box">
+						<ul>
+							<li>
+								<label class="radio">
+									<input type="radio" name="type">
+									<i></i>
+									<strong>타사 서비스 이용</strong>
+								</label>
+							</li>
+							<li>
+								<label class="radio">
+									<input type="radio" name="type">
+									<i></i>
+									<strong>서비스 불만</strong>
+								</label>
+							</li>
+							<li>
+								<label class="radio">
+									<input type="radio" name="type">
+									<i></i>
+									<strong>잦은 서비스 오류 및 장애</strong>
+								</label>
+							</li>
+							<li>
+								<label class="radio">
+									<input type="radio" name="type">
+									<i></i>
+									<strong>기타 (100자 이내 작성)</strong>
+								</label>
+								<div class="textarea-box"> <!-- radio button 활성화시 class="is-active" 추가 -->
+									<div class="box is-white is-shadowless">										
+										<textarea class="textarea" rows="3" placeholder="탈퇴 사유를 입력해 주세요."></textarea>
+									</div>
+									<div class="length-box">
+										<em class="now">0</em>/<em class="max">100</em>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="buttons is-centered">
+						<button type="button" class="button is-medium is-gray">취소</button>
+						<button type="button" class="button is-medium is-green">회원 탈퇴</button>
+					</div>
+				</div>
+				
+			</div>
+			<!-- // Contents -->
+			
+		</div>
+		@@include('./include/bi_list.html',{
+			'mobile' : false
+		})
+	</div>
+	<script>
+		ui.init();
+	</script>
+</body>
+</html>

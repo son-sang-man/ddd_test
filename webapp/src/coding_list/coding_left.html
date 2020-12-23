@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang='ko'>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<title>NPASS</title>
+	<link rel='stylesheet' type='text/css' href='css/reset.css'>
+	<link rel='stylesheet' type='text/css' href='css/base.css'>
+	<script type='text/javascript' src='js/dtree.js'></script>
+	<style>
+		body{padding:20px 10px;}
+		ol {list-style-position: inside; padding-left:2px}
+		li {padding:2px}
+		/* li span {
+
+		} */
+		.t_ing {color:#999999}
+		.t_js {color:brown}
+		.t_app {color:#0042ff}
+		.t_app_js {color:#7395d9}
+		.t_confirm {color:#9600ff}
+		.t_confirm_js {color:#40724b}
+		.t_melon {color:#000}
+		.t_modify {color:#ff0000}
+		img{vertical-align:middle}
+	</style>
+</head>
+<body>
+
+<h1 class='c_left'>NPASS 모바일앱 코딩진행표</h1>
+<h2 class='c_left'>프로세스</h2>
+<ol>
+	<li><span class='t_ing'>작업진행중</span></li> <!-- 상태메세지 : 일반 -->
+	<li><span class='t_js'>스크립트작업</span></li> <!-- 상태메세지 : 스크립트 -->
+	<li><span class='t_melon'>일반</span></li> <!-- 상태메세지 : 일반 -->
+</ol>
+
+<div class='dtree'>
+	<p><a href='javascript: p.openAll();'><img src='img/btn_expand.gif' alt='Expand All' /></a> <a href='javascript: p.closeAll();'><img src='img/btn_collapse.gif' alt='Collapse All' /></a></p>
+	<script type='text/javascript'>
+		var dir = '/coding_list/guide/'
+		var tree1 = {
+			'WSG' : {
+				'기본결정사항' : {
+					'프로젝트사전 협의사항' : [dir + 'with_back_dev.html',  '일반', 'mainFrame'],
+					'작업 상세규칙'        : [dir + 'checklist_front.html', '일반', 'mainFrame'],
+				},
+				'Guide' : {
+				 	'font'     : [dir + 'guide_font.html',       '일반', 'mainFrame'],
+				 	'Button'   : [dir + 'guide_button.html',     '일반', 'mainFrame'],
+				 	'Form'     : [dir + 'guide_form.html',       '일반', 'mainFrame'],
+				 	'layout'   : [dir + 'guide_layout.html',     '일반', 'mainFrame'],
+				 	'contents' : [dir + 'guide_contents.html',   '일반', 'mainFrame'],
+					// 'Popup' : ['/coding_list/guide/guide_popup.html', '일반', 'mainFrame'],
+					// 'profile' : ['/coding_list/guide/guide_profile.html', '일반', 'mainFrame'],
+					// 'Table' : ['/coding_list/guide/guide_table.html', '일반', 'mainFrame']
+				},
+			}
+		};
+		var p = new dTree('p', tree1);
+		document.write(p);
+	</script>
+
+
+	<p><a href='javascript: d.openAll();'><img src='img/btn_expand.gif' alt='Expand All' /></a> <a href='javascript: d.closeAll();'><img src='img/btn_collapse.gif' alt='Collapse All' /></a></p>
+	<script type='text/javascript'>
+		var dir = '/html/'
+		var tree = {
+			'SYS' : {
+				'공통' : {
+					'[L]confirm' : [dir + 'confirm.html', '완료', 'mainFrame'],
+				},
+				'로그인' : {
+					'로그인-PG_NP_0001'                  : [dir + 'PG_NP_0001.html',     '완료', 'mainFrame'],
+					'로그인-PG_NP_0001-1'		         : [dir + 'PG_NP_0001-1.html',   '완료', 'mainFrame'],
+					'통합고객 가입 안내-PG_NP_0002'		  : [dir + 'PG_NP_0002.html',     '완료', 'mainFrame'],
+					'비밀번호 재확인-PG_NP_0003'          : [dir + 'PG_NP_0003.html',     '완료', 'mainFrame'],
+					// '[L]비밀번호 재확인-PG_NP_0003'       : [dir + 'PG_NP_0003_P01.html', '일반', 'mainFrame'],
+					'[L]카드 비밀번호 변경-PG_NP_0003'    : [dir + 'PG_NP_0003_P02.html', '완료', 'mainFrame'],
+					'메인페이지-PG_NP_0014'               : [dir + 'PG_NP_0014.html', '완료', 'mainFrame'],
+				},
+				'아이디 찾기' : {
+					'기본정보-PG_NP_1001'                                      : [dir + 'PG_NP_1001.html',   '완료', 'mainFrame'],
+					'아이핀-PG_NP_1001-1'                                      : [dir + 'PG_NP_1001-1.html', '완료', 'mainFrame'],
+					'중복리스트에서 카드로 찾기-PG_NP_1002'                      : [dir + 'PG_NP_1002.html',   '완료', 'mainFrame'],
+					'중복리스트에서 이메일로 찾기-PG_NP_1003'                    : [dir + 'PG_NP_1003.html',   '완료', 'mainFrame'],
+					'통합회원 전환안내-PG_NP_1004'                              : [dir + 'PG_NP_1004.html',   '완료', 'mainFrame'],
+					'아이디찾기 결과-PG_NP_1006'                                : [dir + 'PG_NP_1006.html',   '완료', 'mainFrame'],
+				},
+				'비밀번호 찾기' : {
+					'기본정보-휴대전화-PG_NP_2001'                               		    : [dir + 'PG_NP_2001.html',     '완료', 'mainFrame'],
+					'기본정보-휴대전화-PG_NP_2001_1'                               		    : [dir + 'PG_NP_2001_1.html',     '완료', 'mainFrame'],
+					'기본정보-이메일-PG_NP_2002'                                 		    : [dir + 'PG_NP_2002.html',     '완료', 'mainFrame'],
+					'기본정보-카드-PG_NP_2003'                                   		    : [dir + 'PG_NP_2003.html',     '완료', 'mainFrame'],
+					'[L]Card&CVC 안내화면-PG_NP_2003_P01'                        		    : [dir + 'PG_NP_2003_P01.html', '완료', 'mainFrame'],
+					'아이핀인증-PG_NP_2004'                                      		    : [dir + 'PG_NP_2004.html',     '완료', 'mainFrame'],
+					'IPIN 임시비밀번호 이메일전송-PG_NP_2005'                    		     : [dir + 'PG_NP_2005.html',     '완료', 'mainFrame'],
+					'IPIN 임시비밀번호 이메일성공-PG_NP_2007'                    		     : [dir + 'PG_NP_2007.html',     '완료', 'mainFrame'],
+					'[중복]IPIN 인증실패-PG_NP_2008'                 	             		: [dir + 'PG_NP_1004.html',     '완료', 'mainFrame'],
+					'IPIN 인증성공-PG_NP_2009'                                   		    : [dir + 'PG_NP_2009.html',     '완료', 'mainFrame'],
+					'SMS변경번호입력-PG_NP_2010'                                 		    : [dir + 'PG_NP_2010.html',     '완료', 'mainFrame'],
+					'카드로 비밀번호 찾기 성공-PG_NP_2014'                       		     : [dir + 'PG_NP_2014.html',     '완료', 'mainFrame'],
+					'[중복]카드로 비밀번호 찾기 실패-PG_NP_2015'                       		: [dir + 'PG_NP_1004.html',     '완료', 'mainFrame'],
+					'[중복]이메일로 비밀번호 찾기 성공-PG_NP_2017'                       		: [dir + 'PG_NP_2007.html',     '완료', 'mainFrame'],
+					'[중복]SMS로 비밀번호 찾기 성공-PG_NP_2019'                       		: [dir + 'PG_NP_2014.html',     '완료', 'mainFrame'],
+				},
+				'회원가입' : {
+					'약관동의-PG_NP_3001'                        							: [dir + 'PG_NP_3001.html', '완료', 'mainFrame'],
+					'본인인증-PG_NP_3002'                        							: [dir + 'PG_NP_3002.html', '완료', 'mainFrame'],
+					'간편가입-PG_NP_3003'                        							: [dir + 'PG_NP_3003.html', '완료', 'mainFrame'],
+					'간편가입-PG_NP_3003_1'                        							: [dir + 'PG_NP_3003_1.html', '완료', 'mainFrame'],
+					'정보입력-PG_NP_3004'                       							: [dir + 'PG_NP_3004.html', '완료', 'mainFrame'],
+					'[중복]GS리테일 통합가입-PG_NP_3005'                       							: [dir + 'PG_NP_3004.html', '완료', 'mainFrame'],
+					'[L]주소검색-PG_NP_3004_P01'                							: [dir + 'PG_NP_3004_P01.html', '완료', 'mainFrame'],
+					'[L]주소검색 데이터 없음-PG_NP_3004_P01' 					    		 : [dir + 'PG_NP_3004_P01_nodata.html', '완료', 'mainFrame'],
+					'가입완료-PG_NP_3006'                          							: [dir + 'PG_NP_3006.html', '완료', 'mainFrame'],
+					'실명인증-재가입안내(탈퇴3개월이내)-PG_NP_3008' 				  		  : [dir + 'PG_NP_3008.html', '완료', 'mainFrame'],
+					'오프라인가입고객 안내-PG_NP_3009' 		                		  		 : [dir + 'PG_NP_3009.html', '완료', 'mainFrame'],
+					'기존가입자 안내-PG_NP_3010' 		                		  	    	 : [dir + 'PG_NP_3010.html', '완료', 'mainFrame'],
+					'공용본인인증-PG_NP_3012'                    							: [dir + 'PG_NP_3012.html', '완료', 'mainFrame'],
+					'[중복]공용본인인증(제휴카드등록 및 아시아나 마일리지 전환용)-PG_NP_3013_P01'	: [dir + 'confirm.html', '완료', 'mainFrame'],
+					'[중복]인증수단선택(SMS)-PG_NP_3013_P02'	 								: [dir + 'confirm.html', '완료', 'mainFrame'],
+					'[중복]NICE 결과처리 실패_PG_NP_3013_P03'	 			   					: [dir + 'confirm.html', '완료', 'mainFrame'],
+					'[중복]인증수단선택(SMS)_PG_NP_3015'                        							: [dir + 'PG_NP_3002.html', '완료', 'mainFrame'],
+					'[중복]NICE본인인증결과처리-PG_NP_3015_P01'                             	: [dir + 'confirm.html', '완료', 'mainFrame'],
+					'[중복]NICE본인인증결과처리-PG_NP_3015_P02'	 								: [dir + 'confirm.html', '완료', 'mainFrame'],
+					'[L]SMS인증-PG_NP_3017'							                	   :  [dir + 'PG_NP_3017.html', '완료', 'mainFrame'],
+					'[중복][L]SMS인증-PG_NP_3018'							           	   :  [dir + 'PG_NP_3017.html', '완료', 'mainFrame'],
+					'회원정보 수정완료-PG_NP_3019'							           	    :  [dir + 'PG_NP_3019.html', '완료', 'mainFrame'],
+					'가입실패 안내화면(GS리테일)-PG_NP_3020' 				           	    :  [dir + 'PG_NP_3020.html', '완료', 'mainFrame'],
+				},
+				'회원정보변경' : {
+					'카드비밀번호 변경-PG_NP_4001'                                           : [dir + 'PG_NP_4001.html', '완료', 'mainFrame'],
+					'수정항목선택-PG_NP_4002'                                               : [dir + 'PG_NP_4002.html', '완료', 'mainFrame'],
+					'비밀번호 변경-PG_NP_4003'                                              : [dir + 'PG_NP_4003.html', '완료', 'mainFrame'],
+					'정보수정-PG_NP_4004'                                                   : [dir + 'PG_NP_4004.html', '완료', 'mainFrame'],
+					'휴먼계정복원신청 인증수단선택-PG_NP_4005'                                : [dir + 'PG_NP_4005.html', '완료', 'mainFrame'],
+					'[중복]휴면계정복원 인증결과 실패-PG_NP_4007'                                : [dir + 'confirm.html', '완료', 'mainFrame'],
+					'휴먼계정복원신청-PG_NP_4009'                                            : [dir + 'PG_NP_4009_1.html', '완료', 'mainFrame'],
+					'휴먼계정복원신청(대상아님)-PG_NP_4009'                                   : [dir + 'PG_NP_4009.html', '완료', 'mainFrame'],
+					'휴먼계정복원신청 완료-PG_NP_4011'                                   : [dir + 'PG_NP_4011.html', '완료', 'mainFrame'],
+				},
+				'회원탈퇴' : {
+					'회원탈퇴-PG_NP_5001'                                                   : [dir + 'PG_NP_5001.html', '완료', 'mainFrame'],
+					'회원탈퇴-PG_NP_5001-1'                                                 : [dir + 'PG_NP_5001-1.html', '완료', 'mainFrame'],
+				},
+				'ETC' : {
+					'에러페이지'                                                   : [dir + 'error.html', '완료', 'mainFrame'],
+					'Loading'                                                   : [dir + 'loading.html', '완료', 'mainFrame'],
+				}
+			},
+		}
+		var d = new dTree('d', tree);
+		document.write(d);
+	</script>
+
+</div>
+
+</body>
+</html>
+

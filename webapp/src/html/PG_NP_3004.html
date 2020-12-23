@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/header.html')
+
+		<div id="container">
+			@@include('./include/join_step.html',{
+				'step' : 3
+			})
+
+			<!-- Contents -->
+			<div id="contents" class="container button-fixed">
+				<div class="title-field type-2">
+					<p>GS&amp;POINT 통합회원 인증 서비스를 통해<br class="is-hidden-tablet"> 직접 가입한 사이트만 이용가능하며,<br class="is-hidden-tablet"> 제휴 사이트에는 정보가 공유되지 않습니다.</p>
+					<p>회원님의 소중한 개인정보는 항상 암호화 되어 처리됩니다.</p> <!-- 2020/11/24 수정 -->
+				</div>
+				<div class="contents-grid is-mobile-inner join-grid">
+					<h3 class="title is-3">기본 정보 입력</h3>
+
+					<div class="field-grid">
+						<div class="field">
+							<div class="columns">
+								<div class="column is-half">
+									<label class="label necessary">이름<span>필수입력</span></label>
+									<div class="control">
+										<input type="text" class="input is-medium" value="홍길동" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<div class="field">
+							<div class="columns">
+								<div class="column is-half type-2">
+									<label class="label necessary">생년월일<span>필수입력</span></label>
+									<div class="control">
+										<input type="text" class="input is-medium" value="1991년 07월 15일" readonly>
+									</div>
+								</div>
+								<div class="column is-half">
+									<label class="label necessary">성별<span>필수입력</span></label>
+									<div class="control">
+										<input type="text" class="input is-medium" value="여자" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<div class="field">
+							<div class="columns">
+								<div class="column is-half">
+									<label class="label necessary">휴대전화번호<span>필수입력</span></label>
+									<div class="control columns is-mobile">
+										<div class="column is-4">
+											<input type="text" class="input is-medium" value="010" readonly>
+										</div>
+										<div class="column is-4">
+											<input type="text" class="input is-medium" value="1234" readonly>
+										</div>
+										<div class="column is-4">
+											<input type="text" class="input is-medium" value="5678" readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="titleList">
+								<dl>
+									<dt class="point-color-2">*본인명의 / 통신사 SKT</dt>
+									<dd class="list hyphen">
+										<ul>
+											<li>아이디 찾기, 비밀번호 찾기, 중복회원통합(포인트 통합, 카드 통합) 등에 사용되어지는 회원식별 정보이므로 정확한 휴대전화번호를 입력하지 않으면,<br class="is-hidden-mobile"> GS&amp;PASS에서 제공하는 <span class="point-color-2">서비스에 제한</span>을 받을 수 있습니다.</li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+						</div>
+	
+						<div class="field">
+							<div class="columns">
+								<div class="column is-half">
+									<label class="label necessary">웹 아이디<span>필수입력</span></label>
+									<div class="columns add-util-btn is-mobile">
+										<div class="control column">
+											<input type="text" class="input is-medium">
+										</div>
+										<div class="column is-one-quarter">
+											<button type="button" class="button is-medium is-green">아이디 확인</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list hyphen">
+								<ul>
+									<li>4~20자의 영문/숫자 가능(특수문자 및 공백입력 불가)</li>
+									<li>이미 다른 분이 사용중인 아이디는 통합 아이디로 사용하실 수 없습니다.</li>
+								</ul>
+							</div>
+						</div>
+	
+						<div class="field">
+							<label class="label necessary">웹 비밀번호<span>필수입력</span></label>
+							<div class="columns">
+								<div class="column is-half">
+									<div class="control">
+										<input type="password" class="input is-medium" placeholder="비밀번호 입력">
+									</div>
+								</div>
+								<div class="column is-half">
+									<div class="control">
+										<input type="password" class="input is-medium" placeholder="비밀번호 입력 확인">
+									</div>
+								</div>
+							</div>
+							<div class="list hyphen">
+								<ul>
+									<li>문자/숫자 혼합, 영문(대소문자 구분), 특수문자(!@$%^&*), 10~16자</li>
+									<li>유출되기 쉬운 비밀번호는 등록할 수 없습니다. (예 : 1111, aabb, 1234, 주민등록번호, 아이디 등)</li>
+								</ul>
+							</div>
+						</div>
+	
+						<div class="field">
+							<label class="label necessary">GS&amp;POINT 카드 비밀번호<span>필수입력</span></label>
+							<div class="columns">
+								<div class="column is-half">
+									<div class="control">
+										<input type="password" class="input is-medium" placeholder="숫자 4자리 입력">
+									</div>
+								</div>
+								<div class="column is-half">
+									<div class="control">
+										<input type="password" class="input is-medium" placeholder="숫자 4자리 입력 확인">
+									</div>
+								</div>
+							</div>
+							<div class="list hyphen">
+								<ul>
+									<li>4개의 숫자가 모두 같은 경우 입력 불가</li>
+									<li>연속된 숫자인 경우 입력 불가</li>
+								</ul>
+							</div>
+						</div>
+	
+						<div class="field">
+							<label class="label necessary">이메일<span>필수입력</span></label>
+							@@include('./include/grid_email.html',{
+								"type" : "1"
+							})
+						</div>
+					</div>
+				</div>
+
+				<div class="contents-grid is-mobile-inner add-information"> <!-- 2020/11/09 -->
+
+					<div class="title-box">
+						<a class="is-active" href="javascript:;"> <!-- 활성화 class="is-active" -->
+							<strong class="title is-3">추가 정보 입력</strong>
+						</a>
+					</div>
+
+					<div class="field-box is-border-bottom">
+						<div class="field-grid">
+							<div class="field">
+								<label class="label">주소<span>(선택)</span></label>
+								<div class="tabs is-toggle address-tabs">
+									<ul>
+										<li class="is-active">
+											<a href="javascript:;">
+												<span>자택 주소</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span>직장 주소</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="address-box">
+									<!-- 자택 주소 -->
+									<div>
+										@@include('./include/address_input.html')
+									</div>
+									<!-- 자택 주소 -->
+			
+									<!-- 직장 주소 -->
+									<div style="display:none">
+										@@include('./include/address_input.html')
+									</div>
+									<!-- // 직장 주소 -->
+								</div>
+								<div class="list hyphen">
+									<ul>
+										<li>이벤트 경품, 상품배송 등을 위해 우편번호 검색 후 <span class="point-color-2">지번(도로명), 건물명(아파트명)</span>이 누락되지 않도록 정확한 주소를 입력해 주시기 바랍니다.</li> <!-- 2020/11/06 수정 -->
+									</ul>
+								</div>
+							</div>
+							
+							<div class="field">
+								<div class="columns">
+									<div class="column is-half type-2">
+										<label class="label">자택 번호<span>(선택)</span></label>
+										@@include('./include/phone_number.html')
+									</div>
+									<div class="column is-half">
+										<label class="label">직장 번호<span>(선택)</span></label>
+										@@include('./include/phone_number.html')
+									</div>
+								</div>
+							</div>
+	
+							<div class="field">
+								<label class="label">생일<span>(선택)</span></label>
+								@@include('./include/anniversary.html', {
+									'name' : 'foo1',
+									'choice' : true
+								})
+							</div>
+						</div>
+
+						<div class="anniversary-box"> <!-- 2020/11/09 수정 -->
+							<h4 class="title is-4">기념일</h4>
+							<div class="field-grid">
+								<div class="field">
+									<label class="label">결혼기념일<span>(선택)</span></label>
+									@@include('./include/anniversary.html', {
+										'name' : 'foo2',
+										'choice' : false
+									})
+								</div>
+	
+								<div class="field">
+									<label class="label">배우자 생일<span>(선택)</span></label>
+									@@include('./include/anniversary.html', {
+										'name' : 'foo3',
+										'choice' : true
+									})
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="msg-box is-mobile-inner">
+					<div class="box join-box is-shadowless is-gray is-align-center">
+						<p><strong class="point-color-2 underline">추가 정보 입력 시</strong><br class="is-hidden-tablet"> 본인/배우자 생일, 결혼기념일 전·후 3일<br class="is-hidden-tablet"> 이내 <strong class="point-color-2">주유 또는 충전 시 250포인트 적립!</strong></p> <!-- 2020/11/24 수정 -->
+						<p>(단, 기념일에 제공되는 특별 포인트는 1년에<br class="is-hidden-tablet"> 1회만 제공됩니다.)</p>
+					</div>
+				</div>
+
+				<div class="buttons is-centered is-fixed">
+					<a href="#" class="button is-large is-gray">취소</a>
+					<button class="button is-large is-green">확인</button>
+				</div>
+
+				
+			</div>
+			<!-- // Contents -->
+			
+		</div>
+		@@include('./include/bi_list.html',{
+			'mobile' : false
+		})
+	</div>
+	<script>
+		ui.init();
+	</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+@charset "utf-8"
+
+@import 'font/_all'
+
+// Color
+$color-1          : #333333
+$color-2          : #FF9E1E
+$color-3          : #04A9A9
+$color-4          : #585858
+$color-5          : #151515
+$color-6          : #8E8E8E
+$color-7          : #CACACA
+$color-8          : #FFFFFF
+$color-9          : #E5E5E5
+$color-10         : #F5F5F5
+$color-11         : #EEEEEE
+$color-12         : #058B8B // hover or press
+$color-13         : #ACACAC // hover or press
+$color-14         : #000000
+$color-15         : #F9F9F9
+$color-transparent: transparent
+
+$border-color : $color-9
+
+
+$family-sans-serif       : 'NotoSansKR', sans-serif
+$body-background-color   : $color-8
+$body-min-width          : 280px 
+$widescreen-enabled      : false
+$fullhd-enabled          : false
+$gap                     : 16px
+$container-offset        : (2 * 92px)
+$desktop                 : 1024px
+$strong-weight           : 500
+
+// generic.sass
+$link                    : $color-1
+$body-color              : $color-1
+
+// Typography
+$size-2: 30px
+$size-3: 20px
+$size-4: 18px
+$size-5: 16px
+$size-6: 15px
+
+// title.sass
+$title-color: $color-1
+$title-weight: $strong-weight
+
+// controls.sass 
+$control-height            : 50px
+$control-padding-vertical  : 13px
+$control-padding-horizontal: 15px
+$control-radius            : 0px
+
+// shared.sass
+$input-radius                      : 0px
+$input-color                       : $color-5
+$input-border-color                : $color-9
+$input-focus-border-color          : $color-9
+$input-shadow                      : none
+$input-focus-box-shadow-size       : 0 0 0 0
+$input-placeholder-color           : $color-7
+$input-hover-border-color          : $color-9
+$input-disabled-background-color   : $color-10
+$input-disabled-border-color       : $color-9
+$input-disabled-color              : $color-7
+$input-disabled-placeholder-color  : $color-7
+
+// grid.sass
+$column-gap: 6px
+
+// modal.sass
+$modal-background-background-color: rgba(0, 0, 0, .3)
+$modal-card-title-color           : $color-5
+$modal-card-title-size            : $size-3
+$modal-card-title-line-height     : 28px
+$modal-card-head-radius           : 0
+$modal-card-head-background-color : $color-8
+$modal-card-head-border-bottom    : 1px solid $color-11
+$modal-card-head-padding          : 16px 20px 15px
+$modal-card-body-padding          : 30px 0px
+$modal-card-foot-radius           : 0
+$modal-card-foot-border-top       : none
+$modal-content-width              : 550px
+
+// tools.sass
+$label-weight: 400
+$label-color : $color-4
+$size-normal : $size-6
+
+// box.sass
+$box-padding: 20px 30px
+$box-color  : $color-1
+
+// tabs.sass
+$tabs-toggle-link-border-color           : $color-9
+$tabs-toggle-link-hover-border-color     : $color-9
+$tabs-toggle-link-hover-background-color : $color-10
+$tabs-toggle-link-active-background-color: $color-8
+$tabs-toggle-link-active-border-color    : $color-3
+$tabs-toggle-link-active-color           : $color-3
+$tabs-link-color                         : $color-7
+$tabs-link-hover-color                   : $color-7
+$tabs-link-active-color                  : $color-1
+
+// Image Path
+$image-path: '/npass/img/'
+
+
+
+=font-set($font-size, $spacing, $line-height)
+	font: 
+		size: $font-size
+	letter-spacing: $spacing
+	line-height: $line-height
+
+@import 'utilities/_all'
+@import 'base/_all'
+@import 'grid/_all'
+@import 'form/_all'
+@import 'elements/_all'
+@import 'components/_all'
+@import 'helpers/_all'
+
+@import 'npass/_all'

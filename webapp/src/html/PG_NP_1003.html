@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/header.html')
+
+		<div id="container">
+
+			<!-- Contents -->
+			<div id="contents" class="container button-fixed">
+				<div class="title-field">
+					<h2 class="title is-2">아이디 찾기</h2>
+					<p>회원님의 이름, 생년월일, 성별이 <span class="point-color-2">같은 정보가<br class="is-hidden-tablet"> 존재</span>하여, 회원님의 카드정보 또는 이메일을<br class="is-hidden-tablet"> 입력하여 찾을 수 있습니다.</p> <!-- 2020/11/06, 2020/11/24 수정 -->
+					<p>주민번호를 수집하지 않게 됨에 따라 이름, 생년월일, 성별이<br class="is-hidden-tablet"> 같은 동명이인의 회원정보가 함께 검색될 수 있습니다.</p> <!-- 2020/11/24 수정 -->
+				</div>
+				
+				<div class="contents-grid type-2">
+					<div class="tabs type-2">
+						<ul>
+							<li> <!-- 활성화 class="is-active" -->
+								<a href="javascript:;"><span>카드</span></a>
+							</li>
+							<li class="is-active">
+								<a href="javascript:;"><span>이메일</span></a>
+							</li>
+						</ul>
+					</div>
+					<div class="tabs-grid is-mobile-inner">
+						<!-- 카드 -->
+						<div class="tabs-item"> <!-- 활성화 class="is-active" -->
+							<div class="field-grid">
+								<div class="field">
+									<div class="columns">
+										<div class="column">
+											<label class="label">카드번호</label>
+											<div class="control columns is-mobile">
+												<div class="column is-3">
+													<input type="tel" class="input is-medium">
+												</div>
+												<div class="column is-3">
+													<input type="password" class="input is-medium">
+												</div>
+												<div class="column is-3">
+													<input type="password" class="input is-medium">
+												</div>
+												<div class="column is-3">
+													<input type="tel" class="input is-medium">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="list hyphen">
+										<ul>
+											<li>소지하고 계시는 GS&amp;POINT 카드의 카드번호를 입력해 주세요.</li>
+											<li>포인트카드는 전면의 카드번호를 입력하시고, 제휴신용 스마트카드는 전면의 카드번호 하단에 포인트카드 번호가 있습니다.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="field">
+									<div class="columns">
+										<div class="column">
+											<label class="label">카드 비밀번호</label>
+											<div class="control">
+												<input type="password" class="input is-medium" placeholder="비밀번호 입력">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="field">
+									<div class="columns">
+										<div class="column">
+											<label class="label is-help">
+												CVC
+												<a class="help-link" href="#"><span>(카드번호와 CVC란?)</span></a>
+											</label>
+											<div class="control">
+												<input type="tel" class="input is-medium" placeholder="숫자 3자리 입력">
+											</div>
+										</div>
+									</div>
+									<div class="list hyphen">
+										<ul>
+											<li>카드 뒷면 서명란 숫자 3자리</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="buttons is-centered is-fixed">
+								<a href="#" class="button is-large is-gray">신규가입</a>
+								<button class="button is-large is-green">확인</button>
+							</div>
+						</div>
+						<!-- // 카드 -->
+
+						<!-- 이메일 -->
+						<div class="tabs-item is-active">
+							<div class="field-grid">
+								<div class="field">
+									<div class="columns">
+										<div class="column">
+											<label class="label">이메일 목록</label>
+											<div class="control">
+												<div class="box is-gray is-shadowless email-list">
+													<ul>
+														<li>g***int@naver.com</li>
+														<li>g***int@naver.com</li>
+														<li>g***int@naver.com</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 2020/12/03 추가 및 수정-->
+								<div class="field">
+									<div class="columns">
+										<div class="column is-half">
+											<div class="columns is-mobile">
+												<div class="column is-half">
+													<div class="control">
+														<input type="text" class="input is-medium" placeholder="이메일 입력">
+													</div>
+												</div>
+												<div class="column is-half">
+													<div class="control">
+														<div class="select is-medium is-fullwidth">
+															<select>
+																<option value="self" selected="selected">직접입력</option>
+																<option value="naver.com">네이버(naver.com)</option>
+																<option value="nate.com">네이트(nate.com)</option>
+																<option value="gmail.com">구글메일(gmail.com)</option>
+																<option value="dreamwiz.com">드림위즈(dreamwiz.com)</option>
+																<option value="korea.com">코리아닷컴(korea.com)</option>
+																<option value="hanmail.net">한메일(hanmail.net)</option>
+																<option value="netian.com">네띠앙(netian.com)</option>
+																<option value="hotmail.com">핫메일(hotmail.com)</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="column is-half">
+											<div class="columns add-util-btn is-mobile">
+												<div class="control column">
+													<input type="text" class="input is-medium">
+												</div>
+												<div class="column is-one-quarter">
+													<button type="button" class="button is-medium is-green">인증번호 받기</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="list hyphen">
+										<ul>
+											<li>이메일의 정확한 주소를 입력해 주세요.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="field">
+									<label class="label">인증번호</label>
+									<div class="columns">
+										<div class="column is-half">
+											<div class="control">
+												<input type="tel" class="input is-medium" placeholder="인증번호 입력">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 2020/12/03 추가 및 수정-->
+							</div>
+							<div class="buttons is-centered is-fixed">
+								<a href="#" class="button is-large is-gray">신규가입</a>
+								<button class="button is-large is-green">확인</button>
+							</div>
+						</div>
+						<!-- // 이메일 -->
+					</div>
+				</div>
+
+			</div>
+			<!-- // Contents -->
+
+		</div>
+
+		@@include('./include/bi_list.html',{
+			'mobile' : false
+		})
+	</div>
+	<script>
+		ui.init();
+	</script>
+</body>
+</html>

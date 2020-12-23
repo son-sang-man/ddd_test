@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_iogin" width="100.001" height="100" viewBox="0 0 100.001 100">
+    <defs>
+        <style>
+            .cls-2,.cls-5{fill:#fff}.cls-2{stroke:#333;stroke-width:2px}.cls-6{fill:#e9e9e9}.cls-8{stroke:none}.cls-9{fill:none}
+        </style>
+    </defs>
+    <g id="ic" transform="translate(-764 -364)">
+        <g id="모니터">
+            <g id="사각형_291" class="cls-2" transform="translate(764 377)">
+                <rect width="88" height="64" class="cls-8" rx="4"/>
+                <rect width="86" height="62" x="1" y="1" class="cls-9" rx="3"/>
+            </g>
+            <g id="사각형_292" fill="#fff" stroke="#333">
+                <path d="M0 0H42V2H0z" class="cls-8" transform="translate(787 449)"/>
+                <path d="M0.5 0.5H41.5V1.5H0.5z" class="cls-9" transform="translate(787 449)"/>
+            </g>
+            <g id="사각형_293" class="cls-2">
+                <path d="M0 0H22V12H0z" class="cls-8" transform="translate(797 439)"/>
+                <path d="M1 1H21V11H1z" class="cls-9" transform="translate(797 439)"/>
+            </g>
+        </g>
+        <g id="말풍선" transform="translate(1 18)">
+            <path id="합치기_8" fill="#04a9a9" d="M13075.655 1803v-8a1 1 0 0 1 .142-.513 8.038 8.038 0 0 1-.138-1.488v-20a8 8 0 0 1 8-8h28a8 8 0 0 1 8 8v20a8 8 0 0 1-8 8h-28a8.072 8.072 0 0 1-1.168-.085l-5.832 3.084a1 1 0 0 1-1.004-.998z" transform="translate(-12256.657 -1398)"/>
+            <g id="my" transform="translate(-97 166)">
+                <rect id="사각형_296" width="10" height="10" class="cls-5" rx="5" transform="translate(933 208)"/>
+                <path id="패스_55" d="M10 0c5.523 0 10 3.166 10 7.071s-20 3.905-20 0S4.477 0 10 0z" class="cls-5" transform="translate(928 220)"/>
+            </g>
+        </g>
+        <g id="그룹_158">
+            <rect id="사각형_321" width="36" height="6" class="cls-6" rx="1" transform="translate(774 391)"/>
+            <rect id="사각형_322" width="36" height="16" class="cls-6" rx="1" transform="translate(774 402)"/>
+        </g>
+        <path id="사각형_294" fill="#333" d="M0 0H86V1H0z" transform="translate(765 430)"/>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<div class="columns is-vcentered">
+	<div class="column is-half">
+		@@include('./calendar.html')
+	</div>
+	@@if(choice){
+	<div class="column is-half">
+		<div class="control">
+			<label class="radio">
+				<input type="radio" name="@@name">
+				<i></i>
+				<strong>양력</strong>
+			</label>
+			<label class="radio">
+				<input type="radio" name="@@name">
+				<i></i>
+				<strong>음력</strong>
+			</label>
+		</div>
+	</div>
+	}
+</div>

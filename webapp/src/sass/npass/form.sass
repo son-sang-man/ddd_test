@@ -1,0 +1,211 @@
+$input-radio-checked-color                    : $color-3
+$input-checkbox-checked-background-color      : $color-3
+$input-checkbox-checked-border-color          : $color-3
+$input-checkbox-checekd-color                 : $color-8
+$input-radio-checkbox-default-bacgkround-color: $color-8
+$input-label-color                            : $color-5
+$input-disabled-background-color-2            : $color-8
+$input-disabled-color-2                       : $color-5
+	
+%form-radio-checkbox
+	position: relative
+	padding: 
+		left: (24px + 8px)
+	input
+		position: absolute
+		visibility: hidden
+		cursor: pointer
+		&[disabled]
+			+ i
+				background: 
+					color: $input-disabled-background-color
+	i
+		width: 24px
+		height: 24px
+		position: absolute
+		top: 50%
+		left: 0
+		border: 
+			width: 1px
+			color: $input-border-color
+			style: solid			
+		transform: translateY(-50%)
+		&::before
+			content: ''
+			position: absolute
+
+	strong
+		font: 
+			weight: $weight-normal
+		display: inline-block
+		vertical-align: top
+		line-height: 24px
+		color: $input-label-color
+		letter-spacing: -.32px
+	&.reverse
+		padding: 
+			left: 0
+			right: 35px
+		i
+			left: auto
+			right: 0
+
+.select
+	&:not(.is-multiple):not(.is-loading)
+		&::after
+			border: 
+				width: 2px
+				radius: 0
+			width: 12px
+			height: 12px
+	select
+		&:not([multiple])
+			+ltr-property("padding", 40px)
+
+.radio
+	@extend %form-radio-checkbox
+	
+	input
+		&:checked
+			+ i
+				&::before
+					width: 12px
+					height: 12px
+	i		
+		border: 
+			radius: 100%
+		background: 
+			color: $input-radio-checkbox-default-bacgkround-color
+		&::before
+			content: ''
+			top: 50%
+			left: 50%
+			width: 0px
+			height: 0px
+			border: 
+				radius: 100%
+			background: 
+				color: $input-radio-checked-color
+			transform: translate(-50%, -50%)
+			z-index: 1
+			transition: all .2s
+	& + .radio
+		+ltr-property("margin", 40px, false)
+
+.checkbox
+	@extend %form-radio-checkbox
+	&:not(.agree-checkbox)
+		input	
+			&:checked
+				+ i
+					background: 
+						color: $input-checkbox-checked-background-color
+					border:
+						color: $input-checkbox-checked-border-color
+					&::before
+						border: 2px solid $input-checkbox-checekd-color
+						border-right: 0
+						border-top: 0
+						top: 5px
+						left: 5px
+						transform: rotate(-45deg)
+						animation: 
+							name: checkbox
+							duration: .2s
+							fill-mode: both
+		i
+			transition: all .2s
+		& + .checkbox
+			+ltr-property("margin", 40px, false)
+			+mobile
+				display: block
+				margin:
+					left: 0
+					top: 20px
+div.checkbox
+	cursor: auto
+
+@keyframes checkbox
+	0%
+		width: 0
+		height: 0
+	50%
+		width: 0px
+		height: 8px
+	100%
+		width: 12px
+		height: 8px
+
+// tool.sass
+$label-sub-text-color : $color-6
+$label-necessary-color: $color-3
+$label-help-color     : $color-6
+
+.label
+	line-height: 23px
+	&:not(:last-child)
+		margin:
+			bottom: 8px
+	span
+		color: $label-sub-text-color
+	&.necessary
+		span
+			font: 
+				size: 0
+			position: absolute
+			visibility: hidden
+		&::after
+			content: '*'
+			color: $label-necessary-color
+	&.is-help
+		display: flex
+		align-items: center
+	.help-link		
+		width: 16px
+		height: 16px
+		position: relative
+		border: 1px solid $label-help-color
+		border-radius: 100%
+		margin:
+			left: 4px
+		&::before
+			content: '?'
+			+font-set(13px, -.26px, 16px)
+			position: absolute
+			top: -1px
+			left: -1px
+			width: 16px
+			height: 16px
+			text-align: center
+			color: $label-help-color
+		span
+			font:
+				size: 0
+
+// input-textarea.sass
+$input-readonly-background-color-2: $color-8
+$input-readonly-color             : $color-6
+$input-readonly-color-2           : $color-5
+
+%readonly
+	&[readonly],
+	fieldset[readonly] &
+		background-color: $input-disabled-background-color
+		border-color: $input-disabled-border-color
+		box-shadow: none
+		color: $input-readonly-color
+		+placeholder
+			color: $input-disabled-placeholder-color
+		&.is-readonly
+			background: 
+				color: $input-readonly-background-color-2
+			color: $input-readonly-color-2
+
+.input,
+.textarea
+	@extend %readonly
+
+.field
+	&:not(:last-child)
+		margin:
+			bottom: calc(25px - #{$column-gap})

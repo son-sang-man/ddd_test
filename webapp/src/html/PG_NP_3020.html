@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/header.html')
+
+		<div id="container">
+
+			<!-- Contents -->
+			<div id="contents" class="container">
+
+				<div class="complete-grid is-mobile-inner">
+					<div class="img-box">
+						<img src="/npass/img/ic_error2.svg" alt="">
+					</div>
+					<div class="box is-shadowless is-gray is-align-center complete">
+                        <p>이용에 불편을 끼쳐 드려서<br class="is-hidden-tablet"> 죄송합니다.</p>
+                        <p>GS&amp;POINT 참여사에서 회원정보를<br class="is-hidden-tablet"> 불러오지 못했습니다.</p> <!-- 2020/11/24 수정 -->
+                        <p>GS&amp;POINT 통합회원 가입 편의를 위해<br class="is-hidden-tablet"> 참여사에서 회원정보를 불러와<br class="is-hidden-tablet"> 회원가입 절차를 간소화 하고 있습니다.<br>현재 네트워크 장애로 인하여 회원정보를<br class="is-hidden-tablet"> 불러오지 못하고 있습니다.<br> 이용에 불편을 드려서 죄송합니다.<br class="is-hidden-tablet"> 잠시 후 다시 이용해 주시기 바랍니다.</p> <!-- 2020/11/24 수정 -->
+					</div>							
+					<div class="buttons is-centered">
+						<button class="button is-large is-gray is-mobile-fullwidth">취소</button>
+						<button class="button is-large is-green is-mobile-fullwidth">이전 페이지</button>
+						<button class="button is-large is-green is-mobile-fullwidth">메인 페이지</button>
+					</div>
+				</div>
+
+			</div>
+			<!-- // Contents -->
+			
+		</div>
+		
+		@@include('./include/bi_list.html',{
+			'mobile' : false
+		})
+	</div>
+	<script>
+		ui.init();
+	</script>
+</body>
+</html>

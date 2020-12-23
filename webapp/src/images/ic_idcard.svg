@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_idcard" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <style>
+            .cls-3{fill:#04a9a9}.cls-4{fill:#e9e9e9}.cls-7{stroke:none}.cls-8{fill:none}
+        </style>
+    </defs>
+    <g id="ic" transform="translate(-767 -374)">
+        <g id="사각형_372" fill="#fff" stroke="#333" stroke-width="2px" transform="translate(772 388)">
+            <rect width="64" height="48" class="cls-7" rx="4"/>
+            <rect width="62" height="46" x="1" y="1" class="cls-8" rx="3"/>
+        </g>
+        <g id="my" transform="translate(-147 193)">
+            <rect id="사각형_296" width="10" height="10" class="cls-3" rx="5" transform="translate(933 208)"/>
+            <path id="패스_55" d="M10 0c5.523 0 10 3.166 10 7.071s-20 3.905-20 0S4.477 0 10 0z" class="cls-3" transform="translate(928 220)"/>
+        </g>
+        <g id="line" transform="translate(-145 197)">
+            <rect id="사각형_297" width="15" height="4" class="cls-4" rx="1" transform="translate(951 208)"/>
+            <rect id="사각형_298" width="23" height="6" class="cls-4" rx="1" transform="translate(951 216)"/>
+        </g>
+        <g id="좌물쇠" transform="translate(2 -12)">
+            <g id="사각형_277" fill="#fff" stroke="#b8b8b8" stroke-width="2px" transform="translate(820 424)">
+                <rect width="14" height="16" class="cls-7" rx="6"/>
+                <rect width="12" height="14" x="1" y="1" class="cls-8" rx="5"/>
+            </g>
+            <rect id="사각형_273" width="22" height="20" fill="#f99e1a" rx="2" transform="translate(816 432)"/>
+        </g>
+    </g>
+</svg>

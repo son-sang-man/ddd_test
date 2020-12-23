@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_sms" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <style>
+            .cls-3{fill:#333}.cls-4{fill:#04a9a9}.cls-8{fill:none}.cls-7{stroke:none}
+        </style>
+    </defs>
+    <g id="ic" transform="translate(-757 -355)">
+        <g id="사각형_329" fill="#fff" stroke="#333" stroke-width="2px" transform="translate(766 367)">
+            <rect width="56" height="76" class="cls-7" rx="4"/>
+            <rect width="54" height="74" x="1" y="1" class="cls-8" rx="3"/>
+        </g>
+        <path id="사각형_330" d="M0 0H56V1H0z" class="cls-3" transform="translate(766 433)"/>
+        <g id="_3" transform="translate(-168 -4)">
+            <rect id="사각형_308" width="12" height="2" class="cls-4" rx="1" transform="translate(949 402)"/>
+            <rect id="사각형_310" width="12" height="2" class="cls-4" rx="1" transform="translate(949 412)"/>
+            <rect id="사각형_309" width="14" height="2" class="cls-4" rx="1" transform="translate(944 407)"/>
+        </g>
+        <g id="email" stroke="#333" stroke-width="2px" transform="translate(-14 -2)">
+            <g id="사각형_307" fill="#e9e9e9" transform="translate(810 386)">
+                <rect width="52" height="38" class="cls-7" rx="2"/>
+                <rect width="50" height="36" x="1" y="1" class="cls-8" rx="1"/>
+            </g>
+            <path id="패스_56" fill="none" d="M811.214 387.726l24.886 19.188 24.6-19.188" transform="translate(0 -.357)"/>
+        </g>
+        <rect id="사각형_331" width="12" height="2" class="cls-3" rx="1" transform="translate(788 373)"/>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+$font-name : 'NotoSansKR'
+$font-path : '/npass/fonts/'
+$fonts     : ('Thin' : 100, 'Light' : 300, 'Regular' : 400, 'Medium' : 500, 'Bold' : 700, 'Black' : 900)
+
+@each $name, $size in $fonts
+	@font-face
+		font : 
+			family : #{$font-name}
+			weight : $size
+			style : normal
+		// src : local('Noto Sans KR #{$name}'), local('#{$font-name}-#{$name}')
+		src : url('#{$font-path}#{$font-name}-#{$name}.woff') format('woff'), url('#{$font-path}#{$font-name}-#{$name}.woff2') format('woff2'), url('#{$font-path}#{$font-name}-#{$name}.otf') format('opentype')

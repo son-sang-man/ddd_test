@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+		<div id="container">
+
+			<!-- Contents -->
+			<div id="contents" class="container">
+
+				<div class="login is-mobile-inner">
+					<h1 class="is-hidden-mobile"> <!-- 2020/11/20 수정 -->
+						<span><img src="/npass/img/logo_login@3x.png" alt="GS POINT"></span>
+						<strong>통합회원 인증 서비스</strong>
+					</h1>
+					
+					<div class="complete-grid"> <!-- 2020/11/12 -->
+						<p class="complete-meseege-copy"><strong>GS&amp;POINT<br><span class="point-color-2">가입</span>을 환영합니다!</strong></p>
+						<p class="complete-meseege-sub-copy">GS&amp;POINT, GS칼텍스, GS리테일, GS SHOP의<br> 다양한 혜택과 이벤트를 이용하세요!</p>
+						<div class="buttons is-centered">
+							<a href="#" class="button is-large is-green">가입하기</a>
+						</div>
+					</div>
+				</div>				
+
+			</div>
+			<!-- // Contents -->
+			
+		</div>
+		@@include('./include/bi_list.html',{
+			'mobile' : true
+		})
+	</div>
+	<script>
+		ui.init();
+	</script>
+</body>
+</html>

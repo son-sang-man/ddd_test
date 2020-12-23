@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_mockup" width="108" height="100" viewBox="0 0 108 100">
+    <defs>
+        <filter id="말풍선" width="75" height="72" x="33" y="6" filterUnits="userSpaceOnUse">
+            <feOffset dy="4"/>
+            <feGaussianBlur result="blur" stdDeviation="5"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-9{fill:#fff}.cls-7{stroke-width:2px}.cls-3{fill:#e9e9e9}.cls-5{fill:#333}.cls-11,.cls-7{fill:none}.cls-7{stroke:#fff}.cls-9{opacity:.5}.cls-10{stroke:none}
+        </style>
+    </defs>
+    <g id="ic" transform="translate(53.999 18)">
+        <g id="paper">
+            <g id="사각형_379" fill="#fff" stroke="#333" stroke-width="2px" transform="translate(-38.999 -11)">
+                <rect width="68" height="86" class="cls-10" rx="6"/>
+                <rect width="66" height="84" x="1" y="1" class="cls-11" rx="5"/>
+            </g>
+            <rect id="사각형_383" width="48" height="4" class="cls-3" rx="1" transform="translate(-28.999 51)"/>
+            <rect id="사각형_391" width="48" height="4" class="cls-3" rx="1" transform="translate(-28.999 59)"/>
+        </g>
+        <g id="연필" transform="rotate(135 -16.632 28.122)">
+            <g id="합치기_10" fill="#fff">
+                <path d="M8162.435 2555.507h-4.002c-.552 0-1-.449-1-1v-44.198l3.002-4.891 3 4.891v44.198c0 .551-.45 1-1 1z" class="cls-10" transform="translate(-8156.434 -2503)"/>
+                <path fill="#333" d="M8162.434 2554.507v-43.915l-2-3.262-2 3.262v42.915l-.001 1h4.001m0 2h-4.001c-1.105 0-2-.896-2-2v-44.48l4.002-6.522 4 6.522V2554.507c0 1.104-.896 2-2 2z" transform="translate(-8156.434 -2503)"/>
+            </g>
+            <path id="사각형_338" d="M0 0H8V1H0z" class="cls-5" transform="translate(0 7.506)"/>
+            <path id="사각형_394" d="M0 0H7V2H0z" class="cls-5" transform="translate(.566 46.506)"/>
+        </g>
+    </g>
+    <g id="ic_motionbox" transform="translate(48 17)">
+        <g filter="url(#말풍선)" transform="translate(-48 -17)">
+            <path id="말풍선-2" fill="#04a9a9" d="M0 41V30.377a.308.308 0 0 1 .006-.077Q0 30.15 0 30V8a8 8 0 0 1 8-8h29a8 8 0 0 1 8 8v22a8 8 0 0 1-8 8H8a8.088 8.088 0 0 1-.821-.042L.938 42A.97.97 0 0 1 0 41z" transform="translate(48 17)"/>
+        </g>
+        <g id="icon" transform="translate(11 5)">
+            <g id="타원_18" class="cls-7" transform="rotate(60 9.09 15.745)">
+                <ellipse cx="3" cy="5" class="cls-10" rx="3" ry="5"/>
+                <ellipse cx="3" cy="5" class="cls-11" rx="2" ry="4"/>
+            </g>
+            <g id="타원_19" class="cls-7" transform="rotate(120 5.647 6.594)">
+                <ellipse cx="3" cy="5" class="cls-10" rx="3" ry="5"/>
+                <ellipse cx="3" cy="5" class="cls-11" rx="2" ry="4"/>
+            </g>
+            <g id="사각형_384" fill="#04a9a9" stroke="#fff" stroke-width="2px">
+                <path d="M0 0H24V8H0z" class="cls-10" transform="translate(0 6)"/>
+                <path d="M1 1H23V7H1z" class="cls-11" transform="translate(0 6)"/>
+            </g>
+            <g id="사각형_385" class="cls-7">
+                <path d="M0 0H20V14H0z" class="cls-10" transform="translate(2 12)"/>
+                <path d="M1 1H19V13H1z" class="cls-11" transform="translate(2 12)"/>
+            </g>
+            <path id="사각형_386" d="M0 0H2V10H0z" class="cls-9" transform="translate(11 14)"/>
+            <path id="사각형_387" d="M0 0H2V4H0z" class="cls-9" transform="translate(11 8)"/>
+        </g>
+    </g>
+</svg>

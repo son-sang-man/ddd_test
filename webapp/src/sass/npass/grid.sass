@@ -1,0 +1,11 @@
+.columns
+	&:not(:last-child)
+		margin :
+			bottom : calc(10px - #{$column-gap})
+
+.column
+	+mobile
+		&.type-2
+			margin :
+				bottom : calc(25px - #{$column-gap})
+		

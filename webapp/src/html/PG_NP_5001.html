@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/header.html')
+
+		<div id="container">
+
+			<!-- Contents -->
+			<div id="contents" class="container">
+				<div class="title-field">
+					<h2 class="title is-2">회원탈퇴</h2> <!-- 2020/12/26 수정 -->
+					<p>회원 탈퇴를 하시면 GS&amp;POINT 회원님께<br class="is-hidden-tablet"> 제공되는 혜택이 더 이상 제공되지 않으며,<br class="is-hidden-tablet"> 회원 탈퇴 후 취소는 불가능합니다.</p> <!-- 2020/11/24 수정 -->
+				</div>
+				
+				<div class="contents-grid is-mobile-inner">
+					<div class="box is-gray is-shadowless bullet-dotted-box"> <!-- 2020/11/24 수정 -->
+						<div class="list dotted">
+							<ul>
+								<li>GS&amp;POINT 회원 탈퇴는 GS&amp;POINT 온라인 및 모바일 약관 협회를 포함한 모든 GS&amp;POINT 서비스에 대한 탈퇴를 의미합니다.</li>
+								<li>GS&amp;POINT 회원 탈퇴를 하시면 등록하셨던 아이디/비밀번호로 온라인 사이트에 로그인 하실 수 없게 되며, 포인트 조회/온라인 이벤트 참여 등 다양한 회원전용 정보와 혜택을 제공받으실 수 없습니다.</li>
+								<li>GS&amp;POINT 회원 탈퇴를 하시면 그 즉시 기존에 발급 되었던 GS&amp;POINT 카드와 포인트 적립/사용이 중지되며, 보유하신 포인트도 소멸됩니다.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="buttons is-centered">
+						<button type="button" class="button is-medium is-gray">취소</button>
+						<button type="button" class="button is-medium is-green">회원 탈퇴</button>
+					</div>
+				</div>
+				
+			</div>
+			<!-- // Contents -->
+			
+		</div>
+		@@include('./include/bi_list.html',{
+			'mobile' : false
+		})
+	</div>
+	<script>
+		ui.init();
+	</script>
+</body>
+</html>

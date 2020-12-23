@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_alljoin" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <style>
+            .cls-2,.cls-5{fill:#fff}.cls-2{stroke:#333;stroke-width:2px}.cls-3{fill:#e9e9e9}.cls-7{fill:#333}.cls-8{stroke:none}.cls-9{fill:none}
+        </style>
+    </defs>
+    <g id="ic" transform="translate(-912 -369)">
+        <g id="사각형_332" class="cls-2" transform="translate(922 379)">
+            <rect width="64" height="80" class="cls-8" rx="4"/>
+            <rect width="62" height="78" x="1" y="1" class="cls-9" rx="3"/>
+        </g>
+        <g id="그룹_163" transform="translate(0 -1)">
+            <rect id="사각형_347" width="28" height="6" class="cls-3" rx="1" transform="translate(950 400)"/>
+            <rect id="사각형_348" width="28" height="6" class="cls-3" rx="1" transform="translate(950 410)"/>
+            <rect id="사각형_349" width="48" height="5" class="cls-3" rx="1" transform="translate(930 422)"/>
+            <g id="check">
+                <path id="사각형_339" fill="#04a9a9" d="M0 0H16V16H0z" transform="translate(930 400)"/>
+                <g id="그룹_162" transform="translate(1.658 -.171)">
+                    <path id="사각형_343" d="M0 0H2V10H0z" class="cls-5" transform="rotate(45 -17.757 1337.058)"/>
+                    <path id="사각형_344" d="M0 0H2V6H0z" class="cls-5" transform="rotate(135 382.829 399.473)"/>
+                </g>
+            </g>
+        </g>
+        <g id="연필" transform="rotate(45 747.514 311.427)">
+            <g id="합치기_9" fill="#fff">
+                <path d="M2860.495 6415.691l-3.001-4.5v-41.697c0-.552.449-1 1-1h4c.553 0 1.001.448 1.001 1v41.698l-3 4.5z" class="cls-8" transform="translate(-1860.495 -6159.494)"/>
+                <path fill="#333" d="M2860.495 6413.89l2-3.001v-41.396h-4.001v41.396l2 3m0 3.605l-4-6v-42c0-1.105.895-2 2-2h4c1.106 0 2.001.895 2.001 2v42l-4 6z" transform="translate(-1860.495 -6159.494)"/>
+            </g>
+            <path id="사각형_338" d="M0 0H8V1H0z" class="cls-7" transform="translate(996 249)"/>
+            <path id="사각형_392" d="M0 0H7V2H0z" class="cls-7" transform="translate(996.495 213.494)"/>
+        </g>
+        <g id="사각형_333" class="cls-2">
+            <path d="M0 0h40v4a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V0z" class="cls-8" transform="translate(934 379)"/>
+            <path d="M2 1h36a1 1 0 0 1 1 1v2a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V2a1 1 0 0 1 1-1z" class="cls-9" transform="translate(934 379)"/>
+        </g>
+        <path id="사각형_393" d="M0 0H42V2H0z" class="cls-7" transform="translate(933 379)"/>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/header.html')
+
+		<div id="container">
+            @@include('./include/dormant_account.html',{
+				'step' : 2
+			})
+
+			<!-- Contents -->
+			<div id="contents" class="container">
+
+				<div class="complete-grid is-mobile-inner">
+                    <div class="img-box">
+                        <img src="/npass/img/ic_idno.svg" alt=""> <!-- 2020/12/26 수정 -->
+                    </div>
+                    <div class="box is-gray is-shadowless is-align-center complete">
+                        <p>휴면 고객 대상이 <span class="point-color-1">아닙니다.</span></p>
+                    </div>
+					<div class="buttons is-centered">
+						<a href="#" class="button is-large is-green">메인 페이지</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- // Contents -->
+			
+		</div>
+		@@include('./include/bi_list.html',{
+			'mobile' : false
+		})
+	</div>
+	<script>
+		ui.init();
+	</script>
+</body>
+</html>

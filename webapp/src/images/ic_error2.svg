@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_error2" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="패스_90" d="M8 0h8l11 38H-3z" class="cls-1" transform="translate(64 57)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#ff9e1e;stroke:#333;stroke-width:2px}.cls-5{fill:#fff}.cls-6{fill:#e9e9e9}.cls-11{fill:none}.cls-10,.cls-12{stroke:none}.cls-12{fill:#333}
+        </style>
+    </defs>
+    <g id="ic" transform="translate(3)">
+        <g id="paper">
+            <g id="사각형_358" fill="#fff" stroke="#333" stroke-width="2px" transform="translate(7 5)">
+                <rect width="70" height="90" class="cls-10" rx="4"/>
+                <rect width="68" height="88" x="1" y="1" class="cls-11" rx="3"/>
+            </g>
+            <g id="check" transform="translate(27.5 18)">
+                <rect id="사각형_197" width="32" height="32" fill="#ccc" rx="16" transform="translate(-1.5 -1)"/>
+                <g id="_" transform="translate(7.307 11.05)">
+                    <path id="사각형_45" d="M0 0H2V12H0z" class="cls-5" transform="translate(6.192 -5.05)"/>
+                    <path id="사각형_355" d="M0 0H2V2H0z" class="cls-5" transform="translate(6.192 10.95)"/>
+                </g>
+            </g>
+            <rect id="사각형_368" width="54" height="6" class="cls-6" rx="1" transform="translate(15 57)"/>
+            <rect id="사각형_369" width="54" height="14" class="cls-6" rx="1" transform="translate(15 67)"/>
+        </g>
+        <g id="꼬깔" transform="translate(-2)">
+            <g id="패스_89" fill="#ff9e1e">
+                <path d="M25.67 37H-1.67L8.753 1h6.496L25.67 37z" class="cls-10" transform="translate(64 57)"/>
+                <path d="M9.503 2L-.339 36H24.34L14.497 2H9.503M8 0h8l11 38H-3L8 0z" class="cls-12" transform="translate(64 57)"/>
+            </g>
+            <g id="마스크_그룹_4" clip-path="url(#clip-path)">
+                <path id="사각형_366" d="M0 0H34V5H0z" class="cls-5" transform="translate(57.991 65)"/>
+                <path id="사각형_367" d="M0 0H34V6H0z" class="cls-5" transform="translate(56 74)"/>
+            </g>
+            <g id="패스_91" fill="none">
+                <path d="M8 0h8l11 38H-3z" class="cls-10" transform="translate(64 57)"/>
+                <path d="M9.503 2L-.339 36H24.34L14.497 2H9.503M8 0h8l11 38H-3L8 0z" class="cls-12" transform="translate(64 57)"/>
+            </g>
+            <g id="사각형_359" class="cls-1">
+                <path d="M0 0H34V6H0z" class="cls-10" transform="translate(59 89)"/>
+                <path d="M1 1H33V5H1z" class="cls-11" transform="translate(59 89)"/>
+            </g>
+        </g>
+    </g>
+</svg>

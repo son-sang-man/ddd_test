@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/header.html')
+
+		<div id="container">
+			@@include('./include/join_step.html',{
+				'step' : 1
+			})
+
+			<!-- Contents -->
+			<div id="contents" class="container">
+				<div class="title-field type-2">
+					<p>GS칼텍스, GS리테일, GS홈쇼핑 등 전국 다양한 GS&amp;POINT 가맹점에서 쌓고, 쓰고, 즐기는<br> GS&amp;POINT의 약관/방침을 읽고 동의해 주세요.</p>
+				</div>
+				
+				<div class="contents-grid is-mobile-inner">
+
+					<div class="agree-list">
+						<ul>
+							<li class="agree-item">
+								<div class="agree-title-box">
+									<label class="checkbox agree-checkbox">
+										<input type="checkbox">
+										<i></i>
+										<span class="agree-text-box">
+											<strong class="label necessary">GS&amp;POINT 모바일 서비스 약관<span>필수</span></strong>
+										</span>
+									</label>
+									<a class="button is-text" href="javascript:;"><span>보기</span></a>
+								</div>
+								@@include('./include/agree.html', {
+									'title' : 'GS&amp;POINT 모바일 서비스 약관',
+									'ifremSrc' : 'https://www.kixx.co.kr/stipulation/s_100003.html'
+								})
+							</li>
+							<li class="agree-item">
+								<div class="agree-title-box">
+									<label class="checkbox agree-checkbox">
+										<input type="checkbox">
+										<i></i>
+										<span class="agree-text-box">
+											<strong class="label necessary">GS&amp;POINT 개인정보 수집 및 활용<span>필수</span></strong>
+										</span>
+									</label>
+									<a class="button is-text" href="javascript:;"><span>보기</span></a>
+								</div>
+								@@include('./include/agree.html', {
+									'title' : 'GS&amp;POINT 개인정보 수집 및 활용',
+									'ifremSrc' : 'https://www.kixx.co.kr/stipulation/s_200003.html'
+								})
+							</li>
+							<li class="agree-item">
+								<div class="agree-title-box">
+									<label class="checkbox agree-checkbox">
+										<input type="checkbox">
+										<i></i>
+										<span class="agree-text-box">
+											<strong class="label">마케팅 목적 개인정보 수집 및 활용에 대한 동의<span>(선택)</span></strong>
+											<span class="discription">동의를 거부할 수 있으나, 동의 거부 시 다양한 고객 맞춤 상품/서비스 안내를 받을 수 없습니다.</span> <!-- 2020/11/30 수정-->
+										</span>
+									</label>
+									<a class="button is-text" href="javascript:;"><span>보기</span></a>
+								</div>
+								@@include('./include/agree.html', {
+									'title' : '마케팅 목적 개인정보 수집 및 활용에 대한 동의',
+									'ifremSrc' : 'https://www.kixx.co.kr/stipulation/s_940001.html'
+								})
+							</li>
+							<li class="agree-item">
+								<div class="agree-title-box">
+									<label class="checkbox agree-checkbox">
+										<input type="checkbox">
+										<i></i>
+										<span class="agree-text-box">
+											<strong class="label necessary">GS&amp;POINT 서비스 제공을 위한 제3자 제공(GS리테일, GS홈쇼핑)<span>필수</span></strong>
+											<span class="discription">동의하시면 포인트, 카드비밀번호/웹아이디/웹 비밀번호를 하나로 통합할 수 있습니다.</span> <!-- 2020/11/30 수정-->
+										</span>
+									</label>
+									<a class="button is-text" href="javascript:;"><span>보기</span></a>
+								</div>
+								@@include('./include/agree.html', {
+									'title' : 'GS&amp;POINT 서비스 제공을 위한 제3자 제공(GS리테일, GS홈쇼핑)',
+									'ifremSrc' : 'https://www.kixx.co.kr/stipulation/s_940001.html'
+								})
+							</li>
+							<li class="agree-item">
+								<div class="agree-title-box">
+									<label class="checkbox agree-checkbox">
+										<input type="checkbox">
+										<i></i>
+										<span class="agree-text-box">
+											<strong class="label">GS&amp;POINT 제휴 상품/서비스 홍보를 위한 제3자 제공(GS엠비즈)<span>(선택)</span></strong>
+											<span class="discription">동의를 거부할 수 있으나, 동의 거부시 GS엠비즈에서 제공하는 다양한 금융 제휴 상품/서비스에 대한 홍보안내를 받을 수 없습니다.</span> <!-- 2020/11/30 수정-->
+										</span>
+									</label>
+									<a class="button is-text" href="javascript:;"><span>보기</span></a>
+								</div>
+								@@include('./include/agree.html', {
+									'title' : 'GS&amp;POINT 제휴 상품/서비스 홍보를 위한 제3자 제공(GS엠비즈)',
+									'ifremSrc' : 'https://www.kixx.co.kr/stipulation/s_700003.html'
+								})
+							</li>
+							<li class="agree-item">
+								<div class="agree-title-box">
+									<div class="checkbox agree-checkbox">
+										<span class="agree-text-box">
+											<strong class="label">GS&amp;POINT 개인정보의 처리위탁</strong>
+											<span class="discription">GS엠비즈(홈페이지 운영 및 CS), GSITM(IT관리)의 서비스 운영 및 관리에 활용됩니다.</span> <!-- 2020/11/30 수정-->
+										</span>
+									</div>
+								</div>
+							</li>
+							<li class="agree-item">
+								<div class="agree-title-box">
+									<div class="checkbox agree-checkbox">
+										<span class="agree-text-box">
+											<strong class="label">광고성정보 수신여부<span>(선택)</span></strong>
+											<span class="discription type-2">GS&amp;POINT 포인트와 관련된 이벤트 정보, 이벤트, 상품/서비스 안내 등의 정보수신 방법을 선 택해 주세요.</span> <!-- 2020/11/30 수정-->
+										</span>
+										<div class="checkbox-list">
+											<label class="checkbox">
+												<input type="checkbox">
+												<i></i>
+												<strong>우편메일(DM)</strong>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox">
+												<i></i>
+												<strong>전자우편(E-mail)</strong>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox">
+												<i></i>
+												<strong>전화정보(TM)</strong>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox">
+												<i></i>
+												<strong>메세지(SMS, LMS, MMS 등)</strong>
+											</label>											
+										</div>
+										<div class="list hyphen">
+											<ul>
+												<li class="is-hidden-mobile">미동의 하시면 해당 방법으로 광고성 정보를 수신 하실 수는 없으나 다른 서비스에 영향을 주지 않습니다.</li>
+												<li class="point-color-2">수신 여부를 체크하시면 각종 이벤트 및 상품관련 정보의 혜택을 우선적으로 누리실 수 있습니다.</li>
+												<li class="is-hidden-mobile">메세지서비스 (SMS, LMS, MMS) 수신 동의 시, 야간발송 될 수 있습니다.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<label class="checkbox all-check">
+							<input type="checkbox">
+							<i></i>
+							<strong>전체동의</strong>
+						</label>
+					</div>
+
+					<div class="buttons is-centered">
+						<a href="#" class="button is-large is-gray">취소</a>
+						<button class="button is-large is-green">동의</button>
+					</div>
+				</div>
+
+
+			</div>
+			<!-- // Contents -->
+			
+		</div>
+		@@include('./include/bi_list.html',{
+			'mobile' : false
+		})
+
+	</div>
+	<script>
+		ui.init();
+
+		// new SimpleBar(document.querySelector('iframe'));
+
+		// Polyfill
+		if (!Element.prototype.matches) {
+		Element.prototype.matches = Element.prototype.msMatchesSelector || 
+									Element.prototype.webkitMatchesSelector;
+		}
+
+		if (!Element.prototype.closest) {
+			Element.prototype.closest = function(s) {
+				var el = this;
+
+				do {
+				if (el.matches(s)) return el;
+				el = el.parentElement || el.parentNode;
+				} while (el !== null && el.nodeType === 1);
+				return null;
+			};
+		}
+
+		// 퍼블리싱 Script
+		var agreeItems = document.querySelectorAll('.agree-item .button');
+		var agreeItemsCLose = document.querySelectorAll('.agree-frame .modal-close');
+
+		Array.prototype.forEach.call(agreeItems, function(item, v){
+			item.addEventListener('click', function(e){
+				var uiSize = document.body.dataset.uiSize;
+				if(uiSize == 'mobile'){
+					document.body.style.overflow = 'hidden';
+					document.documentElement.style.overflow = 'hidden';
+					this.closest('.agree-item').querySelector('.agree-frame').classList.add('modal', 'is-active');
+				} else {
+					if(!this.closest('.agree-item').querySelector('.agree-frame').classList.contains('is-active')){
+						this.closest('.agree-item').querySelector('.agree-frame').classList.add('is-active');
+						this.classList.add('point-color-2');
+						this.querySelector('span').innerText = '닫기';
+					} else {
+						this.closest('.agree-item').querySelector('.agree-frame').classList.remove('is-active');
+						this.querySelector('span').innerText = '보기';
+						this.classList.remove('point-color-2');
+					};
+				};
+			});
+		});
+
+		Array.prototype.forEach.call(agreeItemsCLose, function(item, v){
+			item.addEventListener('click', function(e){
+				var uiSize = document.body.dataset.uiSize;
+				if(uiSize == 'mobile'){
+					document.body.style.overflow = 'visible';
+					document.documentElement.style.overflow = 'visible';
+					this.closest('.modal').classList.remove('modal', 'is-active');
+				} else {
+
+				};
+			});
+		});
+
+		// window.addEventListener('resize', function(){
+		// 	document.body.style.overflow = 'visible';
+		// 	document.documentElement.style.overflow = 'visible';
+		// 	Array.prototype.forEach.call(agreeItems, function(item, v){
+		// 		item.closest('.agree-item').querySelector('.agree-frame').classList.remove('modal', 'is-active');
+		// 	});
+		// });
+	</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+		<div id="container">
+
+			<!-- Contents -->
+			<div id="contents" class="container">
+
+				<div class="grid-414 login is-mobile-inner">
+					<h1>
+						<span><img src="/npass/img/logo_login@3x.png" alt="GS POINT"></span>
+						<strong>통합회원 인증 서비스</strong>
+					</h1>
+
+					<div class="form-grid">
+						<div class="filed-grid">
+							<div class="field">
+								<div class="columns">
+									<div class="control column">
+										<input type="text" class="input is-medium" placeholder="아이디">
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<div class="columns">
+									<div class="control column">
+										<input type="password" class="input is-medium" placeholder="비밀번호">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="buttons">
+							<button type="button" class="button is-large is-green is-fullwidth">로그인</button>
+						</div>
+						<div class="level util is-mobile">
+							<div class="level-left">
+								<label class="checkbox">
+									<input type="checkbox">
+									<i></i>
+									<strong>아이디 저장</strong>
+								</label>
+							</div>
+							<div class="level-right util-link">
+								<a href="#">아이디 찾기</a>
+								<a href="#">비밀번호 찾기</a>
+							</div>
+						</div>
+						<div class="buttons is-centered join">
+							<a href="#" class="button is-large is-outline is-fullwidth">회원가입</a>
+						</div>
+						<div class="buttons is-centered join">
+							<a href="#" class="button is-text">GS&amp;PASS 안내</a>
+						</div>
+					</div>
+				</div>				
+
+			</div>
+			<!-- // Contents -->
+			
+		</div>
+		
+		@@include('./include/bi_list.html',{
+			'mobile' : true
+		})
+	</div>
+	<script>
+		ui.init();
+	</script>
+</body>
+</html>
