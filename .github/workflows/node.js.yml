@@ -45,7 +45,7 @@ jobs:
           git add .
           git commit -m "Add changes"
       - name: Push changes #push files into master branch
-        uses: ad-m/github-push-action@main
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
