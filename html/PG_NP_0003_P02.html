@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr" style="overflow:hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+    <title>GS&amp;POINT</title>
+    <link rel="icon" href="/npass/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/npass/img/bookmark.png">
+
+
+    <!-- Library CSS -->
+    <!-- // Library CSS -->
+
+    <!-- Npass CSS -->
+    <link rel="stylesheet" href="/npass/css/npass.css">
+    <!-- // Npass CSS -->
+
+    <!-- Library JS -->
+    <!-- // Library JS -->
+
+    <script src="/npass/js/ui.js"></script>
+</head>
+
+<body style="overflow:hidden">
+
+    <aside class="modal medium is-active">
+        <div class="modal-background" aria-label="background"></div>
+        <div class="modal-card">
+            <div class="modal-card-head">
+                <h3 class="modal-card-title">GS&amp;POINT 카드 비밀번호 변경</h3>
+            </div>
+            <div class="modal-card-body">
+                <p class="modal-msg">새로 사용할 GS&amp;POINT 카드 비밀번호를<br class="is-hidden-tablet"> 입력해 주시기 바랍니다.</p> <!-- 2020/11/24 수정 -->
+                <div class="filed-grid">
+                    <div class="field">
+                        <div class="columns">
+                            <div class="column">
+                                <label class="label">GS&amp;POINT 카드 비밀번호</label>
+                                <div class="control">
+                                    <input type="password" class="input is-medium" placeholder="비밀번호 입력">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="control">
+                                    <input type="password" class="input is-medium" placeholder="비밀번호 입력 확인">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list hyphen">
+                    <ul>
+                        <li>카드 비밀번호는 숫자 4자리 입니다.</li>
+                        <li>회원님의 생일로 비밀번호가 되어있는 경우 유출의 위험이 크므로 다른 번호로 수정해 주십시오.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-card-foot">
+                <button type="button" class="button is-medium is-gray">취소</button>
+                <button type="button" class="button is-medium is-green">확인</button>
+            </div>
+        </div>
+    </aside>
+
+    <script>
+        ui.init();
+    </script>
+
+</body>
+
+</html>

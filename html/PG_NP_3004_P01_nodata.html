@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr" style="overflow:hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+    <title>GS&amp;POINT</title>
+    <link rel="icon" href="/npass/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/npass/img/bookmark.png">
+
+
+    <!-- Library CSS -->
+    <!-- // Library CSS -->
+
+    <!-- Npass CSS -->
+    <link rel="stylesheet" href="/npass/css/npass.css">
+    <!-- // Npass CSS -->
+
+    <!-- Library JS -->
+    <!-- // Library JS -->
+
+    <script src="/npass/js/ui.js"></script>
+</head>
+
+<body style="overflow:hidden">
+    <aside class="modal is-active">
+        <div class="modal-background" aria-label="background"></div>
+        <div class="modal-card">
+            <div class="modal-card-head">
+                <h3 class="modal-card-title">우편번호 찾기</h3>
+            </div>
+            <div class="modal-card-body">
+                <div class="modal-inner-box">
+                    <div class="columns">
+                        <div class="column">
+                            <div class="control is-search">
+                                <input type="text" class="input is-medium" placeholder="도로명/지번 입력">
+                                <button class="btn-search">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" data-list-type="hyphen">
+                        <ul>
+                            <li><span class="point-color-2">도로명</span> (예:논현로) 또는 <span class="point-color-2">도로명+건물번호</span> (예:논현로 508)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="address-grid">
+                    <div class="address-head level is-mobile">
+                        <strong class="address-title level-left">주소 검색 결과</strong>
+                        <span class="address-count level-right point-color-2">총 0 건</span>
+                    </div>
+                    <div class="address-body">
+                        <div class="no-data">
+                            <p>검색결과가 없습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-close" aria-label="close"></button>
+        </div>
+    </aside>
+
+    <script>
+        ui.init();
+    </script>
+</body>
+
+</html>
