@@ -27,6 +27,7 @@ jobs:
           persist-credentials: false
       - name: run npm build # go to temp folder and run npm build to create files.
         run: |
+          cd temp
           npm install
           gulp bs
       - name: Run pwd
@@ -35,7 +36,7 @@ jobs:
         run: ls -al
       - name: move files # move the dist files into root dir and remove others.
         run: |
-          mv temp/dist/* ./
+          mv temp/webapp/dist/* ./
           rm -rf temp
       - name: Commit files for change # commit changes
         run: |
