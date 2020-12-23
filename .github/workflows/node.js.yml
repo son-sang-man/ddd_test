@@ -29,9 +29,9 @@ jobs:
         run: |
           cd temp
           npm install
-          gulp
+          gulp bs
       - name: Run pwd
-        run: pwd
+        run: pwd 
       - name: Run ls -al
         run: ls -al
       - name: move files # move the dist files into root dir and remove others.
