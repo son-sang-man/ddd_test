@@ -27,7 +27,6 @@ jobs:
           persist-credentials: false
       - name: run npm build # go to temp folder and run npm build to create files.
         run: |
-          cd temp
           npm install
           gulp bs
       - name: Run pwd
