@@ -20,7 +20,7 @@ jobs:
       - name: remove all files # remove files.
         run: |
           rm -rf *
-      - name: checkout dev branch #checkout dev branch into temp folder.
+      - name: checkout develop branch #checkout dev branch into temp folder.
         uses: actions/checkout@v2
         with:
           path: temp
@@ -30,6 +30,10 @@ jobs:
           cd temp
           npm install
           gulp
+      - name: Run pwd
+        run: pwd
+      - name: Run ls -al
+        run: ls -al
       - name: move files # move the dist files into root dir and remove others.
         run: |
           mv temp/dist/* ./
