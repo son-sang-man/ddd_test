@@ -297,4 +297,32 @@ var allSeries = gulp.series([
 	'browserSync'
 ]);
 
+var allSeries2 = gulp.series([
+	// 'clean',
+
+	// Library Dist Move
+	'jquery',
+	'swiper',
+	'sassMove',
+
+	// File Move
+	'media',
+	'codingList',
+	'fonts',
+	'json',
+
+	// ===================================
+	'fileinclude',
+	'imagemin',
+	'sass',
+	'babel',
+
+	
+	
+	// 'watch',
+	// 'browserSync'
+]);
+
 gulp.task('default', allSeries);
+
+gulp.task('bs', allSeries2)
